@@ -1,0 +1,45 @@
+@mixin sg-fontsmoothing-grayscale {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+@mixin sg-fontsmoothing-subpixel {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+@mixin sg-fontface($name, $family, $weight:normal, $style:normal) {
+  @font-face {
+    font-family: "#{$family}";
+    src: url("/fonts/#{$family}-#{$weight}.eot");
+    src: local("#{$name}"),
+    url("/fonts/#{$family}-#{$weight}.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/#{$family}-#{$weight}.woff") format("woff"),
+    url("/fonts/#{$family}-#{$weight}.ttf") format("truetype"),
+    url("/fonts/#{$family}-#{$weight}.svg##{$family}") format("svg");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+@mixin sg-iconfont {
+  @include sg-fontsmoothing-grayscale;
+  font-family: $sg-icon-font;
+}
+@mixin sg-icon-before($char, $width:1.5em, $align:left, $valign:-12%) {
+  &:before {
+    @include sg-iconfont;
+    content: "#{$char}";
+    display: inline-block;
+    width: $width;
+    text-align: $align;
+    vertical-align: $valign;
+  }
+}
+@mixin sg-icon-after($char, $width:1.5em, $align:right, $valign:-12%) {
+  &:after {
+    @include sg-iconfont;
+    content: "#{$char}";
+    display: inline-block;
+    width: $width;
+    text-align: $align;
+    vertical-align: $valign;
+  }
+}

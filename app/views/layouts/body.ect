@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<% include 'app/views/partials/head.ect' %>
+
+<% if @styleguide: %>
+  <script>
+  (function() {
+    if (location.search.indexOf("customCss") !== -1) {
+      var cssTag = document.createElement('link');
+      cssTag.rel = 'stylesheet';
+      cssTag.href = location.href.split('.html')[0] + '.css';
+      document.getElementsByTagName('head')[0].appendChild(cssTag);
+    }
+  })();
+  </script>
+<% end %>
+
+</head>
+<body>
+
+<%- @content %>
+
+<% include 'app/views/partials/scripts.ect' %>
+</body>
+</html>

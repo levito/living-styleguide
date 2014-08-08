@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Styleguide</title>
+	<!-- build:css css/dcomm/styleguide.css -->
+	<link rel="stylesheet" href="/bower_components/prismjs/prism.css"/>
+	<link rel="stylesheet" href="/styles/styleguide.css"/>
+	<!-- endbuild -->
+	<script>
+	var cookie = {
+		set: function(name, val) {
+			document.cookie = [name, '=', val, '; path=/'].join('');
+		},
+		get: function(name) {
+			var pair = document.cookie.match(new RegExp(name + '=([^;]+)'))
+			return !!pair ? pair[1] : null;
+		}
+	};
+
+	function eraseCookie(name) {
+		createCookie(name,"",-1);
+	}
+
+	function resizeIframe(el) {
+		el.height = 0;
+		el.height = el.contentWindow.document.body.scrollHeight;
+	}
+
+	function resizeAllIframes() {
+		if (cookie.get('sg_layout') !== 'full') return;
+		var iframes = document.getElementsByTagName('iframe');
+		for (var i = 0, l = iframes.length; i < l; ++i) {
+			resizeIframe(iframes[i]);
+		}
+	}
+
+	function switchControl(el) {
+		var nl = el.parentNode.parentNode.getElementsByTagName("a");
+		for (var i = 0, l = nl.length; i < l; ++i) {
+			nl[i].className = '';
+		}
+		el.className = 'active';
+	}
+
+	function switchLayoutView(el) {
+		switchControl(el);
+		document.body.className = el.textContent.trim();
+		cookie.set('sg_layout', el.getAttribute('id'));
+		resizeAllIframes();
+	}
+
+	function switchDetailsView(el) {
+		switchControl(el);
+		var resetNl = document.getElementsByClassName('Sample-toggle');
+		var newNl = document.getElementsByClassName(el.textContent.trim() + '-toggle');
+		var nl = [].slice.call(resetNl).concat([].slice.call(newNl));
+		for (var i = 0, l = nl.length; i < l; ++i) {
+			nl[i].click();
+		}
+		cookie.set('sg_details', el.getAttribute('id'));
+	}
+
+	function restoreViewState() {
+		if (cookie.get('sg_layout')) {
+			switchLayoutView(document.getElementById(cookie.get('sg_layout')));
+		}
+		if (cookie.get('sg_details')) {
+			switchDetailsView(document.getElementById(cookie.get('sg_details')));
+		}
+	}
+	</script>
+</html>
+<body class="full" onload="restoreViewState()" onresize="resizeAllIframes()">
+	<ul class="header nav">
+		<% for item in @navitems: %>
+			<li>
+				<a href="<%- item.path %>/">
+					<%- item.title %>
+				</a>
+				<ul class="nav level-2">
+					<% for item in item.children: %>
+						<li>
+							<a <%- 'class="active"' if item.isActive %>
+								href="<%- item.path %>/">
+								<%- item.title %>
+							</a>
+							<ul class="nav level-3">
+								<% for item in item.children: %>
+									<li>
+										<a <%- 'class="active"' if item.isActive %>
+											href="<%- item.path %>/">
+											<%- item.title %>
+										</a>
+									</li>
+								<% end %>
+							</ul>
+						</li>
+					<% end %>
+				</ul>
+			</li>
+		<% end %>
+		<li class="controls">
+			<ul class="nav level-2">
+				<li>
+					<a href="#" class="control">Jump To</a>
+					<ul class="nav level-3">
+						<% for section in @sections: %>
+							<li>
+								<a href="#section__<%- section.name.split('/').pop() %>">
+									<%- section.title %>
+								</a>
+							</li>
+						<% end %>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav level-2">
+				<li>
+					<span class="control">Layout</span>
+					<ul class="nav level-3">
+						<% for layout in ['full', 'tablet landscape', 'tablet portrait', 'phone landscape', 'phone portrait']: %>
+							<li>
+								<a href="javascript://" id="<%- layout.split(' ').join('-') %>"
+									onclick="switchLayoutView(this)"
+									<%- 'class=active' if layout == 'full' %>
+								><%- layout %></a>
+							</li>
+						<% end %>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav level-2">
+				<li>
+					<span class="control">Details</span>
+					<ul class="nav level-3">
+						<% for details in ['Sample', 'Usage', 'Markup', 'CSS', 'SCSS']: %>
+							<li>
+								<a href="javascript://" id="<%- details %>"
+									<%- 'class="active"' if details == 'Sample' %>
+									onclick="switchDetailsView(this)">
+									<%- details %>
+								</a>
+							</li>
+						<% end %>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="body">
+		<% for section in @sections: %>
+
+			<div class="<%- 'intro-' unless section.Markup? %>section">
+				<a class="target" id="section__<%- section.name.split('/').pop() %>"></a>
+				<h1 class="section-title">
+					<% if section.Markup?: %>
+						<% param = if section.CSS? or section.SCSS? then '?customCss' else '' %>
+						<a href="<%- section.name %>.html<%- param %>" target="_blank">
+							<%- section.title %>
+						</a>
+					<% else: %>
+						<%- section.title %>
+					<% end %>
+				</h1>
+
+				<% if section.Markup?: %>
+					<% for details in ['SCSS', 'CSS', 'Markup', 'Usage', 'Sample']: %>
+						<% if section[details]? ||
+							(details == 'Sample' && section.Markup?): %>
+							<input type="radio" name="<%- section.name %>"
+								id="<%- details + '__' + section.name %>"
+								class="<%- details %>-toggle details-toggle"
+								<%- 'checked' if details == 'Sample' %>/>
+							<label for="<%- details + '__' + section.name %>"
+								class="<%- details %>-label details-label">
+								<%- details %>
+							</label>
+						<% end %>
+					<% end %>
+				<% else: %>
+					<input type="radio" class="Usage-toggle details-toggle" checked/>
+				<% end %>
+
+				<% if section.SCSS?: %>
+					<pre class="details SCSS-details"><code class="language-scss"><%= section.SCSS.contents %></code></pre>
+				<% end %>
+
+				<% if section.CSS?: %>
+					<pre class="details CSS-details"><code class="language-css"><%= section.CSS.contents %></code></pre>
+				<% end %>
+
+				<% if section.Markup?: %>
+					<pre class="details Markup-details"><code class="language-markup"><%= section.Markup.contents %></code></pre>
+				<% end %>
+
+				<% if section.Usage?: %>
+					<div class="details Usage-details">
+						<%- section.Usage.contents %>
+					</div>
+				<% end %>
+
+				<% if section.Markup?: %>
+					<iframe class="sample" frameborder="0"
+						src="<%- section.name %>.html<%- param %>"
+						onload="resizeIframe(this)"
+						onresize="resizeIframe(this)"></iframe>
+				<% end %>
+			</div>
+
+		<% end %>
+	</div>
+
+	<!-- build:js js/dcomm/styleguide.js -->
+	<script src="/bower_components/prismjs/prism.js"></script>
+	<script src="/bower_components/prismjs/components/prism-scss.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

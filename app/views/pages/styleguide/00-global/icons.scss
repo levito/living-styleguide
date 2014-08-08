@@ -1,0 +1,1369 @@
+@import "app";
+
+.sg-icon-martrix {
+  th {
+    padding: 20px 10px 10px;
+    border-top: 1px solid;
+  }
+  tr:first-child > th {
+    padding-top: 0;
+    border-top: none;
+  }
+  td {
+    padding: 10px;
+    vertical-align: baseline;
+  }
+}
+.sg-icon-IE {
+  @include sg-icon-before($icon-IE, 1em);
+}
+.sg-icon-IcoMoon {
+  @include sg-icon-before($icon-IcoMoon, 1em);
+}
+.sg-icon-accessibility {
+  @include sg-icon-before($icon-accessibility, 1em);
+}
+.sg-icon-address-book {
+  @include sg-icon-before($icon-address-book, 1em);
+}
+.sg-icon-aid {
+  @include sg-icon-before($icon-aid, 1em);
+}
+.sg-icon-airplane {
+  @include sg-icon-before($icon-airplane, 1em);
+}
+.sg-icon-alarm {
+  @include sg-icon-before($icon-alarm, 1em);
+}
+.sg-icon-alarm2 {
+  @include sg-icon-before($icon-alarm2, 1em);
+}
+.sg-icon-android {
+  @include sg-icon-before($icon-android, 1em);
+}
+.sg-icon-angry {
+  @include sg-icon-before($icon-angry, 1em);
+}
+.sg-icon-angry2 {
+  @include sg-icon-before($icon-angry2, 1em);
+}
+.sg-icon-apple {
+  @include sg-icon-before($icon-apple, 1em);
+}
+.sg-icon-arrow-down-left {
+  @include sg-icon-before($icon-arrow-down-left, 1em);
+}
+.sg-icon-arrow-down-left2 {
+  @include sg-icon-before($icon-arrow-down-left2, 1em);
+}
+.sg-icon-arrow-down-left3 {
+  @include sg-icon-before($icon-arrow-down-left3, 1em);
+}
+.sg-icon-arrow-down-right {
+  @include sg-icon-before($icon-arrow-down-right, 1em);
+}
+.sg-icon-arrow-down-right2 {
+  @include sg-icon-before($icon-arrow-down-right2, 1em);
+}
+.sg-icon-arrow-down-right3 {
+  @include sg-icon-before($icon-arrow-down-right3, 1em);
+}
+.sg-icon-arrow-down {
+  @include sg-icon-before($icon-arrow-down, 1em);
+}
+.sg-icon-arrow-down2 {
+  @include sg-icon-before($icon-arrow-down2, 1em);
+}
+.sg-icon-arrow-down3 {
+  @include sg-icon-before($icon-arrow-down3, 1em);
+}
+.sg-icon-arrow-left {
+  @include sg-icon-before($icon-arrow-left, 1em);
+}
+.sg-icon-arrow-left2 {
+  @include sg-icon-before($icon-arrow-left2, 1em);
+}
+.sg-icon-arrow-left3 {
+  @include sg-icon-before($icon-arrow-left3, 1em);
+}
+.sg-icon-arrow-right {
+  @include sg-icon-before($icon-arrow-right, 1em);
+}
+.sg-icon-arrow-right2 {
+  @include sg-icon-before($icon-arrow-right2, 1em);
+}
+.sg-icon-arrow-right3 {
+  @include sg-icon-before($icon-arrow-right3, 1em);
+}
+.sg-icon-arrow-up-left {
+  @include sg-icon-before($icon-arrow-up-left, 1em);
+}
+.sg-icon-arrow-up-left2 {
+  @include sg-icon-before($icon-arrow-up-left2, 1em);
+}
+.sg-icon-arrow-up-left3 {
+  @include sg-icon-before($icon-arrow-up-left3, 1em);
+}
+.sg-icon-arrow-up-right {
+  @include sg-icon-before($icon-arrow-up-right, 1em);
+}
+.sg-icon-arrow-up-right2 {
+  @include sg-icon-before($icon-arrow-up-right2, 1em);
+}
+.sg-icon-arrow-up-right3 {
+  @include sg-icon-before($icon-arrow-up-right3, 1em);
+}
+.sg-icon-arrow-up {
+  @include sg-icon-before($icon-arrow-up, 1em);
+}
+.sg-icon-arrow-up2 {
+  @include sg-icon-before($icon-arrow-up2, 1em);
+}
+.sg-icon-arrow-up3 {
+  @include sg-icon-before($icon-arrow-up3, 1em);
+}
+.sg-icon-attachment {
+  @include sg-icon-before($icon-attachment, 1em);
+}
+.sg-icon-backward {
+  @include sg-icon-before($icon-backward, 1em);
+}
+.sg-icon-backward2 {
+  @include sg-icon-before($icon-backward2, 1em);
+}
+.sg-icon-barcode {
+  @include sg-icon-before($icon-barcode, 1em);
+}
+.sg-icon-bars {
+  @include sg-icon-before($icon-bars, 1em);
+}
+.sg-icon-bars2 {
+  @include sg-icon-before($icon-bars2, 1em);
+}
+.sg-icon-bell {
+  @include sg-icon-before($icon-bell, 1em);
+}
+.sg-icon-binoculars {
+  @include sg-icon-before($icon-binoculars, 1em);
+}
+.sg-icon-blocked {
+  @include sg-icon-before($icon-blocked, 1em);
+}
+.sg-icon-blog {
+  @include sg-icon-before($icon-blog, 1em);
+}
+.sg-icon-blogger {
+  @include sg-icon-before($icon-blogger, 1em);
+}
+.sg-icon-blogger2 {
+  @include sg-icon-before($icon-blogger2, 1em);
+}
+.sg-icon-bold {
+  @include sg-icon-before($icon-bold, 1em);
+}
+.sg-icon-book {
+  @include sg-icon-before($icon-book, 1em);
+}
+.sg-icon-bookmark {
+  @include sg-icon-before($icon-bookmark, 1em);
+}
+.sg-icon-bookmarks {
+  @include sg-icon-before($icon-bookmarks, 1em);
+}
+.sg-icon-books {
+  @include sg-icon-before($icon-books, 1em);
+}
+.sg-icon-box-add {
+  @include sg-icon-before($icon-box-add, 1em);
+}
+.sg-icon-box-remove {
+  @include sg-icon-before($icon-box-remove, 1em);
+}
+.sg-icon-briefcase {
+  @include sg-icon-before($icon-briefcase, 1em);
+}
+.sg-icon-brightness-contrast {
+  @include sg-icon-before($icon-brightness-contrast, 1em);
+}
+.sg-icon-brightness-medium {
+  @include sg-icon-before($icon-brightness-medium, 1em);
+}
+.sg-icon-bubble {
+  @include sg-icon-before($icon-bubble, 1em);
+}
+.sg-icon-bubble2 {
+  @include sg-icon-before($icon-bubble2, 1em);
+}
+.sg-icon-bubbles {
+  @include sg-icon-before($icon-bubbles, 1em);
+}
+.sg-icon-bubbles2 {
+  @include sg-icon-before($icon-bubbles2, 1em);
+}
+.sg-icon-bubbles3 {
+  @include sg-icon-before($icon-bubbles3, 1em);
+}
+.sg-icon-bubbles4 {
+  @include sg-icon-before($icon-bubbles4, 1em);
+}
+.sg-icon-bug {
+  @include sg-icon-before($icon-bug, 1em);
+}
+.sg-icon-bullhorn {
+  @include sg-icon-before($icon-bullhorn, 1em);
+}
+.sg-icon-busy {
+  @include sg-icon-before($icon-busy, 1em);
+}
+.sg-icon-cabinet {
+  @include sg-icon-before($icon-cabinet, 1em);
+}
+.sg-icon-calculate {
+  @include sg-icon-before($icon-calculate, 1em);
+}
+.sg-icon-calendar {
+  @include sg-icon-before($icon-calendar, 1em);
+}
+.sg-icon-calendar2 {
+  @include sg-icon-before($icon-calendar2, 1em);
+}
+.sg-icon-camera {
+  @include sg-icon-before($icon-camera, 1em);
+}
+.sg-icon-camera2 {
+  @include sg-icon-before($icon-camera2, 1em);
+}
+.sg-icon-cancel-circle {
+  @include sg-icon-before($icon-cancel-circle, 1em);
+}
+.sg-icon-cart {
+  @include sg-icon-before($icon-cart, 1em);
+}
+.sg-icon-cart2 {
+  @include sg-icon-before($icon-cart2, 1em);
+}
+.sg-icon-cart3 {
+  @include sg-icon-before($icon-cart3, 1em);
+}
+.sg-icon-checkbox-checked {
+  @include sg-icon-before($icon-checkbox-checked, 1em);
+}
+.sg-icon-checkbox-partial {
+  @include sg-icon-before($icon-checkbox-partial, 1em);
+}
+.sg-icon-checkbox-unchecked {
+  @include sg-icon-before($icon-checkbox-unchecked, 1em);
+}
+.sg-icon-checkmark-circle {
+  @include sg-icon-before($icon-checkmark-circle, 1em);
+}
+.sg-icon-checkmark {
+  @include sg-icon-before($icon-checkmark, 1em);
+}
+.sg-icon-checkmark2 {
+  @include sg-icon-before($icon-checkmark2, 1em);
+}
+.sg-icon-chrome {
+  @include sg-icon-before($icon-chrome, 1em);
+}
+.sg-icon-clock {
+  @include sg-icon-before($icon-clock, 1em);
+}
+.sg-icon-clock2 {
+  @include sg-icon-before($icon-clock2, 1em);
+}
+.sg-icon-close {
+  @include sg-icon-before($icon-close, 1em);
+}
+.sg-icon-cloud-download {
+  @include sg-icon-before($icon-cloud-download, 1em);
+}
+.sg-icon-cloud-upload {
+  @include sg-icon-before($icon-cloud-upload, 1em);
+}
+.sg-icon-cloud {
+  @include sg-icon-before($icon-cloud, 1em);
+}
+.sg-icon-clubs {
+  @include sg-icon-before($icon-clubs, 1em);
+}
+.sg-icon-code {
+  @include sg-icon-before($icon-code, 1em);
+}
+.sg-icon-cog {
+  @include sg-icon-before($icon-cog, 1em);
+}
+.sg-icon-cog2 {
+  @include sg-icon-before($icon-cog2, 1em);
+}
+.sg-icon-cogs {
+  @include sg-icon-before($icon-cogs, 1em);
+}
+.sg-icon-coin {
+  @include sg-icon-before($icon-coin, 1em);
+}
+.sg-icon-compass {
+  @include sg-icon-before($icon-compass, 1em);
+}
+.sg-icon-confused {
+  @include sg-icon-before($icon-confused, 1em);
+}
+.sg-icon-confused2 {
+  @include sg-icon-before($icon-confused2, 1em);
+}
+.sg-icon-connection {
+  @include sg-icon-before($icon-connection, 1em);
+}
+.sg-icon-console {
+  @include sg-icon-before($icon-console, 1em);
+}
+.sg-icon-contract {
+  @include sg-icon-before($icon-contract, 1em);
+}
+.sg-icon-contract2 {
+  @include sg-icon-before($icon-contract2, 1em);
+}
+.sg-icon-contrast {
+  @include sg-icon-before($icon-contrast, 1em);
+}
+.sg-icon-cool {
+  @include sg-icon-before($icon-cool, 1em);
+}
+.sg-icon-cool2 {
+  @include sg-icon-before($icon-cool2, 1em);
+}
+.sg-icon-copy {
+  @include sg-icon-before($icon-copy, 1em);
+}
+.sg-icon-copy2 {
+  @include sg-icon-before($icon-copy2, 1em);
+}
+.sg-icon-copy3 {
+  @include sg-icon-before($icon-copy3, 1em);
+}
+.sg-icon-credit {
+  @include sg-icon-before($icon-credit, 1em);
+}
+.sg-icon-crop {
+  @include sg-icon-before($icon-crop, 1em);
+}
+.sg-icon-css3 {
+  @include sg-icon-before($icon-css3, 1em);
+}
+.sg-icon-dashboard {
+  @include sg-icon-before($icon-dashboard, 1em);
+}
+.sg-icon-delicious {
+  @include sg-icon-before($icon-delicious, 1em);
+}
+.sg-icon-deviantart {
+  @include sg-icon-before($icon-deviantart, 1em);
+}
+.sg-icon-deviantart2 {
+  @include sg-icon-before($icon-deviantart2, 1em);
+}
+.sg-icon-diamonds {
+  @include sg-icon-before($icon-diamonds, 1em);
+}
+.sg-icon-dice {
+  @include sg-icon-before($icon-dice, 1em);
+}
+.sg-icon-disk {
+  @include sg-icon-before($icon-disk, 1em);
+}
+.sg-icon-download {
+  @include sg-icon-before($icon-download, 1em);
+}
+.sg-icon-download2 {
+  @include sg-icon-before($icon-download2, 1em);
+}
+.sg-icon-download3 {
+  @include sg-icon-before($icon-download3, 1em);
+}
+.sg-icon-drawer {
+  @include sg-icon-before($icon-drawer, 1em);
+}
+.sg-icon-drawer2 {
+  @include sg-icon-before($icon-drawer2, 1em);
+}
+.sg-icon-drawer3 {
+  @include sg-icon-before($icon-drawer3, 1em);
+}
+.sg-icon-dribbble {
+  @include sg-icon-before($icon-dribbble, 1em);
+}
+.sg-icon-dribbble2 {
+  @include sg-icon-before($icon-dribbble2, 1em);
+}
+.sg-icon-dribbble3 {
+  @include sg-icon-before($icon-dribbble3, 1em);
+}
+.sg-icon-droplet {
+  @include sg-icon-before($icon-droplet, 1em);
+}
+.sg-icon-earth {
+  @include sg-icon-before($icon-earth, 1em);
+}
+.sg-icon-eject {
+  @include sg-icon-before($icon-eject, 1em);
+}
+.sg-icon-embed {
+  @include sg-icon-before($icon-embed, 1em);
+}
+.sg-icon-enter {
+  @include sg-icon-before($icon-enter, 1em);
+}
+.sg-icon-envelop {
+  @include sg-icon-before($icon-envelop, 1em);
+}
+.sg-icon-equalizer {
+  @include sg-icon-before($icon-equalizer, 1em);
+}
+.sg-icon-evil {
+  @include sg-icon-before($icon-evil, 1em);
+}
+.sg-icon-evil2 {
+  @include sg-icon-before($icon-evil2, 1em);
+}
+.sg-icon-exit {
+  @include sg-icon-before($icon-exit, 1em);
+}
+.sg-icon-expand {
+  @include sg-icon-before($icon-expand, 1em);
+}
+.sg-icon-expand2 {
+  @include sg-icon-before($icon-expand2, 1em);
+}
+.sg-icon-eye-blocked {
+  @include sg-icon-before($icon-eye-blocked, 1em);
+}
+.sg-icon-eye {
+  @include sg-icon-before($icon-eye, 1em);
+}
+.sg-icon-eye2 {
+  @include sg-icon-before($icon-eye2, 1em);
+}
+.sg-icon-facebook {
+  @include sg-icon-before($icon-facebook, 1em);
+}
+.sg-icon-facebook2 {
+  @include sg-icon-before($icon-facebook2, 1em);
+}
+.sg-icon-facebook3 {
+  @include sg-icon-before($icon-facebook3, 1em);
+}
+.sg-icon-feed {
+  @include sg-icon-before($icon-feed, 1em);
+}
+.sg-icon-feed2 {
+  @include sg-icon-before($icon-feed2, 1em);
+}
+.sg-icon-feed3 {
+  @include sg-icon-before($icon-feed3, 1em);
+}
+.sg-icon-feed4 {
+  @include sg-icon-before($icon-feed4, 1em);
+}
+.sg-icon-file-css {
+  @include sg-icon-before($icon-file-css, 1em);
+}
+.sg-icon-file-excel {
+  @include sg-icon-before($icon-file-excel, 1em);
+}
+.sg-icon-file-openoffice {
+  @include sg-icon-before($icon-file-openoffice, 1em);
+}
+.sg-icon-file-pdf {
+  @include sg-icon-before($icon-file-pdf, 1em);
+}
+.sg-icon-file-powerpoint {
+  @include sg-icon-before($icon-file-powerpoint, 1em);
+}
+.sg-icon-file-word {
+  @include sg-icon-before($icon-file-word, 1em);
+}
+.sg-icon-file-xml {
+  @include sg-icon-before($icon-file-xml, 1em);
+}
+.sg-icon-file-zip {
+  @include sg-icon-before($icon-file-zip, 1em);
+}
+.sg-icon-file {
+  @include sg-icon-before($icon-file, 1em);
+}
+.sg-icon-file2 {
+  @include sg-icon-before($icon-file2, 1em);
+}
+.sg-icon-file3 {
+  @include sg-icon-before($icon-file3, 1em);
+}
+.sg-icon-file4 {
+  @include sg-icon-before($icon-file4, 1em);
+}
+.sg-icon-film {
+  @include sg-icon-before($icon-film, 1em);
+}
+.sg-icon-filter {
+  @include sg-icon-before($icon-filter, 1em);
+}
+.sg-icon-filter2 {
+  @include sg-icon-before($icon-filter2, 1em);
+}
+.sg-icon-finder {
+  @include sg-icon-before($icon-finder, 1em);
+}
+.sg-icon-fire {
+  @include sg-icon-before($icon-fire, 1em);
+}
+.sg-icon-firefox {
+  @include sg-icon-before($icon-firefox, 1em);
+}
+.sg-icon-first {
+  @include sg-icon-before($icon-first, 1em);
+}
+.sg-icon-flag {
+  @include sg-icon-before($icon-flag, 1em);
+}
+.sg-icon-flattr {
+  @include sg-icon-before($icon-flattr, 1em);
+}
+.sg-icon-flickr {
+  @include sg-icon-before($icon-flickr, 1em);
+}
+.sg-icon-flickr2 {
+  @include sg-icon-before($icon-flickr2, 1em);
+}
+.sg-icon-flickr3 {
+  @include sg-icon-before($icon-flickr3, 1em);
+}
+.sg-icon-flickr4 {
+  @include sg-icon-before($icon-flickr4, 1em);
+}
+.sg-icon-flip {
+  @include sg-icon-before($icon-flip, 1em);
+}
+.sg-icon-flip2 {
+  @include sg-icon-before($icon-flip2, 1em);
+}
+.sg-icon-folder-open {
+  @include sg-icon-before($icon-folder-open, 1em);
+}
+.sg-icon-folder {
+  @include sg-icon-before($icon-folder, 1em);
+}
+.sg-icon-font {
+  @include sg-icon-before($icon-font, 1em);
+}
+.sg-icon-food {
+  @include sg-icon-before($icon-food, 1em);
+}
+.sg-icon-forrst {
+  @include sg-icon-before($icon-forrst, 1em);
+}
+.sg-icon-forrst2 {
+  @include sg-icon-before($icon-forrst2, 1em);
+}
+.sg-icon-forward {
+  @include sg-icon-before($icon-forward, 1em);
+}
+.sg-icon-forward2 {
+  @include sg-icon-before($icon-forward2, 1em);
+}
+.sg-icon-forward3 {
+  @include sg-icon-before($icon-forward3, 1em);
+}
+.sg-icon-foursquare {
+  @include sg-icon-before($icon-foursquare, 1em);
+}
+.sg-icon-foursquare2 {
+  @include sg-icon-before($icon-foursquare2, 1em);
+}
+.sg-icon-gift {
+  @include sg-icon-before($icon-gift, 1em);
+}
+.sg-icon-github {
+  @include sg-icon-before($icon-github, 1em);
+}
+.sg-icon-github2 {
+  @include sg-icon-before($icon-github2, 1em);
+}
+.sg-icon-github3 {
+  @include sg-icon-before($icon-github3, 1em);
+}
+.sg-icon-github4 {
+  @include sg-icon-before($icon-github4, 1em);
+}
+.sg-icon-github5 {
+  @include sg-icon-before($icon-github5, 1em);
+}
+.sg-icon-glass {
+  @include sg-icon-before($icon-glass, 1em);
+}
+.sg-icon-globe {
+  @include sg-icon-before($icon-globe, 1em);
+}
+.sg-icon-google-drive {
+  @include sg-icon-before($icon-google-drive, 1em);
+}
+.sg-icon-google-plus {
+  @include sg-icon-before($icon-google-plus, 1em);
+}
+.sg-icon-google-plus2 {
+  @include sg-icon-before($icon-google-plus2, 1em);
+}
+.sg-icon-google-plus3 {
+  @include sg-icon-before($icon-google-plus3, 1em);
+}
+.sg-icon-google-plus4 {
+  @include sg-icon-before($icon-google-plus4, 1em);
+}
+.sg-icon-google {
+  @include sg-icon-before($icon-google, 1em);
+}
+.sg-icon-grin {
+  @include sg-icon-before($icon-grin, 1em);
+}
+.sg-icon-grin2 {
+  @include sg-icon-before($icon-grin2, 1em);
+}
+.sg-icon-hammer {
+  @include sg-icon-before($icon-hammer, 1em);
+}
+.sg-icon-hammer2 {
+  @include sg-icon-before($icon-hammer2, 1em);
+}
+.sg-icon-happy {
+  @include sg-icon-before($icon-happy, 1em);
+}
+.sg-icon-happy2 {
+  @include sg-icon-before($icon-happy2, 1em);
+}
+.sg-icon-headphones {
+  @include sg-icon-before($icon-headphones, 1em);
+}
+.sg-icon-heart-broken {
+  @include sg-icon-before($icon-heart-broken, 1em);
+}
+.sg-icon-heart {
+  @include sg-icon-before($icon-heart, 1em);
+}
+.sg-icon-heart2 {
+  @include sg-icon-before($icon-heart2, 1em);
+}
+.sg-icon-history {
+  @include sg-icon-before($icon-history, 1em);
+}
+.sg-icon-home {
+  @include sg-icon-before($icon-home, 1em);
+}
+.sg-icon-home2 {
+  @include sg-icon-before($icon-home2, 1em);
+}
+.sg-icon-home3 {
+  @include sg-icon-before($icon-home3, 1em);
+}
+.sg-icon-html5 {
+  @include sg-icon-before($icon-html5, 1em);
+}
+.sg-icon-html52 {
+  @include sg-icon-before($icon-html52, 1em);
+}
+.sg-icon-image {
+  @include sg-icon-before($icon-image, 1em);
+}
+.sg-icon-image2 {
+  @include sg-icon-before($icon-image2, 1em);
+}
+.sg-icon-images {
+  @include sg-icon-before($icon-images, 1em);
+}
+.sg-icon-indent-decrease {
+  @include sg-icon-before($icon-indent-decrease, 1em);
+}
+.sg-icon-indent-increase {
+  @include sg-icon-before($icon-indent-increase, 1em);
+}
+.sg-icon-info {
+  @include sg-icon-before($icon-info, 1em);
+}
+.sg-icon-info2 {
+  @include sg-icon-before($icon-info2, 1em);
+}
+.sg-icon-insert-template {
+  @include sg-icon-before($icon-insert-template, 1em);
+}
+.sg-icon-instagram {
+  @include sg-icon-before($icon-instagram, 1em);
+}
+.sg-icon-italic {
+  @include sg-icon-before($icon-italic, 1em);
+}
+.sg-icon-joomla {
+  @include sg-icon-before($icon-joomla, 1em);
+}
+.sg-icon-key {
+  @include sg-icon-before($icon-key, 1em);
+}
+.sg-icon-key2 {
+  @include sg-icon-before($icon-key2, 1em);
+}
+.sg-icon-keyboard {
+  @include sg-icon-before($icon-keyboard, 1em);
+}
+.sg-icon-lab {
+  @include sg-icon-before($icon-lab, 1em);
+}
+.sg-icon-lanyrd {
+  @include sg-icon-before($icon-lanyrd, 1em);
+}
+.sg-icon-laptop {
+  @include sg-icon-before($icon-laptop, 1em);
+}
+.sg-icon-last {
+  @include sg-icon-before($icon-last, 1em);
+}
+.sg-icon-lastfm {
+  @include sg-icon-before($icon-lastfm, 1em);
+}
+.sg-icon-lastfm2 {
+  @include sg-icon-before($icon-lastfm2, 1em);
+}
+.sg-icon-leaf {
+  @include sg-icon-before($icon-leaf, 1em);
+}
+.sg-icon-left-to-right {
+  @include sg-icon-before($icon-left-to-right, 1em);
+}
+.sg-icon-library {
+  @include sg-icon-before($icon-library, 1em);
+}
+.sg-icon-libreoffice {
+  @include sg-icon-before($icon-libreoffice, 1em);
+}
+.sg-icon-lightning {
+  @include sg-icon-before($icon-lightning, 1em);
+}
+.sg-icon-link {
+  @include sg-icon-before($icon-link, 1em);
+}
+.sg-icon-linkedin {
+  @include sg-icon-before($icon-linkedin, 1em);
+}
+.sg-icon-list {
+  @include sg-icon-before($icon-list, 1em);
+}
+.sg-icon-list2 {
+  @include sg-icon-before($icon-list2, 1em);
+}
+.sg-icon-location {
+  @include sg-icon-before($icon-location, 1em);
+}
+.sg-icon-location2 {
+  @include sg-icon-before($icon-location2, 1em);
+}
+.sg-icon-lock {
+  @include sg-icon-before($icon-lock, 1em);
+}
+.sg-icon-lock2 {
+  @include sg-icon-before($icon-lock2, 1em);
+}
+.sg-icon-loop {
+  @include sg-icon-before($icon-loop, 1em);
+}
+.sg-icon-loop2 {
+  @include sg-icon-before($icon-loop2, 1em);
+}
+.sg-icon-loop3 {
+  @include sg-icon-before($icon-loop3, 1em);
+}
+.sg-icon-magnet {
+  @include sg-icon-before($icon-magnet, 1em);
+}
+.sg-icon-mail {
+  @include sg-icon-before($icon-mail, 1em);
+}
+.sg-icon-mail2 {
+  @include sg-icon-before($icon-mail2, 1em);
+}
+.sg-icon-mail3 {
+  @include sg-icon-before($icon-mail3, 1em);
+}
+.sg-icon-mail4 {
+  @include sg-icon-before($icon-mail4, 1em);
+}
+.sg-icon-map {
+  @include sg-icon-before($icon-map, 1em);
+}
+.sg-icon-map2 {
+  @include sg-icon-before($icon-map2, 1em);
+}
+.sg-icon-menu {
+  @include sg-icon-before($icon-menu, 1em);
+}
+.sg-icon-menu2 {
+  @include sg-icon-before($icon-menu2, 1em);
+}
+.sg-icon-meter {
+  @include sg-icon-before($icon-meter, 1em);
+}
+.sg-icon-meter2 {
+  @include sg-icon-before($icon-meter2, 1em);
+}
+.sg-icon-minus {
+  @include sg-icon-before($icon-minus, 1em);
+}
+.sg-icon-mobile {
+  @include sg-icon-before($icon-mobile, 1em);
+}
+.sg-icon-mobile2 {
+  @include sg-icon-before($icon-mobile2, 1em);
+}
+.sg-icon-mug {
+  @include sg-icon-before($icon-mug, 1em);
+}
+.sg-icon-music {
+  @include sg-icon-before($icon-music, 1em);
+}
+.sg-icon-neutral {
+  @include sg-icon-before($icon-neutral, 1em);
+}
+.sg-icon-neutral2 {
+  @include sg-icon-before($icon-neutral2, 1em);
+}
+.sg-icon-new-tab {
+  @include sg-icon-before($icon-new-tab, 1em);
+}
+.sg-icon-newspaper {
+  @include sg-icon-before($icon-newspaper, 1em);
+}
+.sg-icon-next {
+  @include sg-icon-before($icon-next, 1em);
+}
+.sg-icon-notebook {
+  @include sg-icon-before($icon-notebook, 1em);
+}
+.sg-icon-notification {
+  @include sg-icon-before($icon-notification, 1em);
+}
+.sg-icon-numbered-list {
+  @include sg-icon-before($icon-numbered-list, 1em);
+}
+.sg-icon-office {
+  @include sg-icon-before($icon-office, 1em);
+}
+.sg-icon-omega {
+  @include sg-icon-before($icon-omega, 1em);
+}
+.sg-icon-opera {
+  @include sg-icon-before($icon-opera, 1em);
+}
+.sg-icon-pacman {
+  @include sg-icon-before($icon-pacman, 1em);
+}
+.sg-icon-paint-format {
+  @include sg-icon-before($icon-paint-format, 1em);
+}
+.sg-icon-paragraph-center {
+  @include sg-icon-before($icon-paragraph-center, 1em);
+}
+.sg-icon-paragraph-center2 {
+  @include sg-icon-before($icon-paragraph-center2, 1em);
+}
+.sg-icon-paragraph-justify {
+  @include sg-icon-before($icon-paragraph-justify, 1em);
+}
+.sg-icon-paragraph-justify2 {
+  @include sg-icon-before($icon-paragraph-justify2, 1em);
+}
+.sg-icon-paragraph-left {
+  @include sg-icon-before($icon-paragraph-left, 1em);
+}
+.sg-icon-paragraph-left2 {
+  @include sg-icon-before($icon-paragraph-left2, 1em);
+}
+.sg-icon-paragraph-right {
+  @include sg-icon-before($icon-paragraph-right, 1em);
+}
+.sg-icon-paragraph-right2 {
+  @include sg-icon-before($icon-paragraph-right2, 1em);
+}
+.sg-icon-paste {
+  @include sg-icon-before($icon-paste, 1em);
+}
+.sg-icon-paste2 {
+  @include sg-icon-before($icon-paste2, 1em);
+}
+.sg-icon-paste3 {
+  @include sg-icon-before($icon-paste3, 1em);
+}
+.sg-icon-pause {
+  @include sg-icon-before($icon-pause, 1em);
+}
+.sg-icon-pause2 {
+  @include sg-icon-before($icon-pause2, 1em);
+}
+.sg-icon-pawn {
+  @include sg-icon-before($icon-pawn, 1em);
+}
+.sg-icon-paypal {
+  @include sg-icon-before($icon-paypal, 1em);
+}
+.sg-icon-paypal2 {
+  @include sg-icon-before($icon-paypal2, 1em);
+}
+.sg-icon-paypal3 {
+  @include sg-icon-before($icon-paypal3, 1em);
+}
+.sg-icon-pen {
+  @include sg-icon-before($icon-pen, 1em);
+}
+.sg-icon-pencil {
+  @include sg-icon-before($icon-pencil, 1em);
+}
+.sg-icon-pencil2 {
+  @include sg-icon-before($icon-pencil2, 1em);
+}
+.sg-icon-phone-hang-up {
+  @include sg-icon-before($icon-phone-hang-up, 1em);
+}
+.sg-icon-phone {
+  @include sg-icon-before($icon-phone, 1em);
+}
+.sg-icon-picassa {
+  @include sg-icon-before($icon-picassa, 1em);
+}
+.sg-icon-picassa2 {
+  @include sg-icon-before($icon-picassa2, 1em);
+}
+.sg-icon-pie {
+  @include sg-icon-before($icon-pie, 1em);
+}
+.sg-icon-pilcrow {
+  @include sg-icon-before($icon-pilcrow, 1em);
+}
+.sg-icon-pinterest {
+  @include sg-icon-before($icon-pinterest, 1em);
+}
+.sg-icon-pinterest2 {
+  @include sg-icon-before($icon-pinterest2, 1em);
+}
+.sg-icon-play {
+  @include sg-icon-before($icon-play, 1em);
+}
+.sg-icon-play2 {
+  @include sg-icon-before($icon-play2, 1em);
+}
+.sg-icon-play3 {
+  @include sg-icon-before($icon-play3, 1em);
+}
+.sg-icon-plus {
+  @include sg-icon-before($icon-plus, 1em);
+}
+.sg-icon-podcast {
+  @include sg-icon-before($icon-podcast, 1em);
+}
+.sg-icon-point-down {
+  @include sg-icon-before($icon-point-down, 1em);
+}
+.sg-icon-point-left {
+  @include sg-icon-before($icon-point-left, 1em);
+}
+.sg-icon-point-right {
+  @include sg-icon-before($icon-point-right, 1em);
+}
+.sg-icon-point-up {
+  @include sg-icon-before($icon-point-up, 1em);
+}
+.sg-icon-power-cord {
+  @include sg-icon-before($icon-power-cord, 1em);
+}
+.sg-icon-previous {
+  @include sg-icon-before($icon-previous, 1em);
+}
+.sg-icon-print {
+  @include sg-icon-before($icon-print, 1em);
+}
+.sg-icon-profile {
+  @include sg-icon-before($icon-profile, 1em);
+}
+.sg-icon-pushpin {
+  @include sg-icon-before($icon-pushpin, 1em);
+}
+.sg-icon-qrcode {
+  @include sg-icon-before($icon-qrcode, 1em);
+}
+.sg-icon-question {
+  @include sg-icon-before($icon-question, 1em);
+}
+.sg-icon-quill {
+  @include sg-icon-before($icon-quill, 1em);
+}
+.sg-icon-quotes-left {
+  @include sg-icon-before($icon-quotes-left, 1em);
+}
+.sg-icon-radio-checked {
+  @include sg-icon-before($icon-radio-checked, 1em);
+}
+.sg-icon-radio-unchecked {
+  @include sg-icon-before($icon-radio-unchecked, 1em);
+}
+.sg-icon-reddit {
+  @include sg-icon-before($icon-reddit, 1em);
+}
+.sg-icon-redo {
+  @include sg-icon-before($icon-redo, 1em);
+}
+.sg-icon-redo2 {
+  @include sg-icon-before($icon-redo2, 1em);
+}
+.sg-icon-remove {
+  @include sg-icon-before($icon-remove, 1em);
+}
+.sg-icon-remove2 {
+  @include sg-icon-before($icon-remove2, 1em);
+}
+.sg-icon-reply {
+  @include sg-icon-before($icon-reply, 1em);
+}
+.sg-icon-right-to-left {
+  @include sg-icon-before($icon-right-to-left, 1em);
+}
+.sg-icon-road {
+  @include sg-icon-before($icon-road, 1em);
+}
+.sg-icon-rocket {
+  @include sg-icon-before($icon-rocket, 1em);
+}
+.sg-icon-sad {
+  @include sg-icon-before($icon-sad, 1em);
+}
+.sg-icon-sad2 {
+  @include sg-icon-before($icon-sad2, 1em);
+}
+.sg-icon-safari {
+  @include sg-icon-before($icon-safari, 1em);
+}
+.sg-icon-scissors {
+  @include sg-icon-before($icon-scissors, 1em);
+}
+.sg-icon-screen {
+  @include sg-icon-before($icon-screen, 1em);
+}
+.sg-icon-search {
+  @include sg-icon-before($icon-search, 1em);
+}
+.sg-icon-settings {
+  @include sg-icon-before($icon-settings, 1em);
+}
+.sg-icon-share {
+  @include sg-icon-before($icon-share, 1em);
+}
+.sg-icon-shield {
+  @include sg-icon-before($icon-shield, 1em);
+}
+.sg-icon-shocked {
+  @include sg-icon-before($icon-shocked, 1em);
+}
+.sg-icon-shocked2 {
+  @include sg-icon-before($icon-shocked2, 1em);
+}
+.sg-icon-shuffle {
+  @include sg-icon-before($icon-shuffle, 1em);
+}
+.sg-icon-sigma {
+  @include sg-icon-before($icon-sigma, 1em);
+}
+.sg-icon-signup {
+  @include sg-icon-before($icon-signup, 1em);
+}
+.sg-icon-skype {
+  @include sg-icon-before($icon-skype, 1em);
+}
+.sg-icon-smiley {
+  @include sg-icon-before($icon-smiley, 1em);
+}
+.sg-icon-smiley2 {
+  @include sg-icon-before($icon-smiley2, 1em);
+}
+.sg-icon-soundcloud {
+  @include sg-icon-before($icon-soundcloud, 1em);
+}
+.sg-icon-soundcloud2 {
+  @include sg-icon-before($icon-soundcloud2, 1em);
+}
+.sg-icon-spades {
+  @include sg-icon-before($icon-spades, 1em);
+}
+.sg-icon-spam {
+  @include sg-icon-before($icon-spam, 1em);
+}
+.sg-icon-spell-check {
+  @include sg-icon-before($icon-spell-check, 1em);
+}
+.sg-icon-spinner {
+  @include sg-icon-before($icon-spinner, 1em);
+}
+.sg-icon-spinner2 {
+  @include sg-icon-before($icon-spinner2, 1em);
+}
+.sg-icon-spinner3 {
+  @include sg-icon-before($icon-spinner3, 1em);
+}
+.sg-icon-spinner4 {
+  @include sg-icon-before($icon-spinner4, 1em);
+}
+.sg-icon-spinner5 {
+  @include sg-icon-before($icon-spinner5, 1em);
+}
+.sg-icon-spinner6 {
+  @include sg-icon-before($icon-spinner6, 1em);
+}
+.sg-icon-stack {
+  @include sg-icon-before($icon-stack, 1em);
+}
+.sg-icon-stackoverflow {
+  @include sg-icon-before($icon-stackoverflow, 1em);
+}
+.sg-icon-star {
+  @include sg-icon-before($icon-star, 1em);
+}
+.sg-icon-star2 {
+  @include sg-icon-before($icon-star2, 1em);
+}
+.sg-icon-star3 {
+  @include sg-icon-before($icon-star3, 1em);
+}
+.sg-icon-stats {
+  @include sg-icon-before($icon-stats, 1em);
+}
+.sg-icon-steam {
+  @include sg-icon-before($icon-steam, 1em);
+}
+.sg-icon-steam2 {
+  @include sg-icon-before($icon-steam2, 1em);
+}
+.sg-icon-stop {
+  @include sg-icon-before($icon-stop, 1em);
+}
+.sg-icon-stop2 {
+  @include sg-icon-before($icon-stop2, 1em);
+}
+.sg-icon-stopwatch {
+  @include sg-icon-before($icon-stopwatch, 1em);
+}
+.sg-icon-storage {
+  @include sg-icon-before($icon-storage, 1em);
+}
+.sg-icon-strikethrough {
+  @include sg-icon-before($icon-strikethrough, 1em);
+}
+.sg-icon-stumbleupon {
+  @include sg-icon-before($icon-stumbleupon, 1em);
+}
+.sg-icon-stumbleupon2 {
+  @include sg-icon-before($icon-stumbleupon2, 1em);
+}
+.sg-icon-support {
+  @include sg-icon-before($icon-support, 1em);
+}
+.sg-icon-switch {
+  @include sg-icon-before($icon-switch, 1em);
+}
+.sg-icon-tab {
+  @include sg-icon-before($icon-tab, 1em);
+}
+.sg-icon-table {
+  @include sg-icon-before($icon-table, 1em);
+}
+.sg-icon-table2 {
+  @include sg-icon-before($icon-table2, 1em);
+}
+.sg-icon-tablet {
+  @include sg-icon-before($icon-tablet, 1em);
+}
+.sg-icon-tag {
+  @include sg-icon-before($icon-tag, 1em);
+}
+.sg-icon-tags {
+  @include sg-icon-before($icon-tags, 1em);
+}
+.sg-icon-target {
+  @include sg-icon-before($icon-target, 1em);
+}
+.sg-icon-text-height {
+  @include sg-icon-before($icon-text-height, 1em);
+}
+.sg-icon-text-width {
+  @include sg-icon-before($icon-text-width, 1em);
+}
+.sg-icon-thumbs-up {
+  @include sg-icon-before($icon-thumbs-up, 1em);
+}
+.sg-icon-thumbs-up2 {
+  @include sg-icon-before($icon-thumbs-up2, 1em);
+}
+.sg-icon-ticket {
+  @include sg-icon-before($icon-ticket, 1em);
+}
+.sg-icon-tongue {
+  @include sg-icon-before($icon-tongue, 1em);
+}
+.sg-icon-tongue2 {
+  @include sg-icon-before($icon-tongue2, 1em);
+}
+.sg-icon-tree {
+  @include sg-icon-before($icon-tree, 1em);
+}
+.sg-icon-trophy {
+  @include sg-icon-before($icon-trophy, 1em);
+}
+.sg-icon-truck {
+  @include sg-icon-before($icon-truck, 1em);
+}
+.sg-icon-tumblr {
+  @include sg-icon-before($icon-tumblr, 1em);
+}
+.sg-icon-tumblr2 {
+  @include sg-icon-before($icon-tumblr2, 1em);
+}
+.sg-icon-tux {
+  @include sg-icon-before($icon-tux, 1em);
+}
+.sg-icon-tv {
+  @include sg-icon-before($icon-tv, 1em);
+}
+.sg-icon-twitter {
+  @include sg-icon-before($icon-twitter, 1em);
+}
+.sg-icon-twitter2 {
+  @include sg-icon-before($icon-twitter2, 1em);
+}
+.sg-icon-twitter3 {
+  @include sg-icon-before($icon-twitter3, 1em);
+}
+.sg-icon-underline {
+  @include sg-icon-before($icon-underline, 1em);
+}
+.sg-icon-undo {
+  @include sg-icon-before($icon-undo, 1em);
+}
+.sg-icon-undo2 {
+  @include sg-icon-before($icon-undo2, 1em);
+}
+.sg-icon-unlocked {
+  @include sg-icon-before($icon-unlocked, 1em);
+}
+.sg-icon-upload {
+  @include sg-icon-before($icon-upload, 1em);
+}
+.sg-icon-upload2 {
+  @include sg-icon-before($icon-upload2, 1em);
+}
+.sg-icon-upload3 {
+  @include sg-icon-before($icon-upload3, 1em);
+}
+.sg-icon-user {
+  @include sg-icon-before($icon-user, 1em);
+}
+.sg-icon-user2 {
+  @include sg-icon-before($icon-user2, 1em);
+}
+.sg-icon-user3 {
+  @include sg-icon-before($icon-user3, 1em);
+}
+.sg-icon-user4 {
+  @include sg-icon-before($icon-user4, 1em);
+}
+.sg-icon-users {
+  @include sg-icon-before($icon-users, 1em);
+}
+.sg-icon-users2 {
+  @include sg-icon-before($icon-users2, 1em);
+}
+.sg-icon-vimeo {
+  @include sg-icon-before($icon-vimeo, 1em);
+}
+.sg-icon-vimeo2 {
+  @include sg-icon-before($icon-vimeo2, 1em);
+}
+.sg-icon-vimeo3 {
+  @include sg-icon-before($icon-vimeo3, 1em);
+}
+.sg-icon-volume-decrease {
+  @include sg-icon-before($icon-volume-decrease, 1em);
+}
+.sg-icon-volume-high {
+  @include sg-icon-before($icon-volume-high, 1em);
+}
+.sg-icon-volume-increase {
+  @include sg-icon-before($icon-volume-increase, 1em);
+}
+.sg-icon-volume-low {
+  @include sg-icon-before($icon-volume-low, 1em);
+}
+.sg-icon-volume-medium {
+  @include sg-icon-before($icon-volume-medium, 1em);
+}
+.sg-icon-volume-mute {
+  @include sg-icon-before($icon-volume-mute, 1em);
+}
+.sg-icon-volume-mute2 {
+  @include sg-icon-before($icon-volume-mute2, 1em);
+}
+.sg-icon-wand {
+  @include sg-icon-before($icon-wand, 1em);
+}
+.sg-icon-warning {
+  @include sg-icon-before($icon-warning, 1em);
+}
+.sg-icon-windows {
+  @include sg-icon-before($icon-windows, 1em);
+}
+.sg-icon-windows8 {
+  @include sg-icon-before($icon-windows8, 1em);
+}
+.sg-icon-wink {
+  @include sg-icon-before($icon-wink, 1em);
+}
+.sg-icon-wink2 {
+  @include sg-icon-before($icon-wink2, 1em);
+}
+.sg-icon-wondering {
+  @include sg-icon-before($icon-wondering, 1em);
+}
+.sg-icon-wondering2 {
+  @include sg-icon-before($icon-wondering2, 1em);
+}
+.sg-icon-wordpress {
+  @include sg-icon-before($icon-wordpress, 1em);
+}
+.sg-icon-wordpress2 {
+  @include sg-icon-before($icon-wordpress2, 1em);
+}
+.sg-icon-wrench {
+  @include sg-icon-before($icon-wrench, 1em);
+}
+.sg-icon-xing {
+  @include sg-icon-before($icon-xing, 1em);
+}
+.sg-icon-xing2 {
+  @include sg-icon-before($icon-xing2, 1em);
+}
+.sg-icon-yahoo {
+  @include sg-icon-before($icon-yahoo, 1em);
+}
+.sg-icon-yelp {
+  @include sg-icon-before($icon-yelp, 1em);
+}
+.sg-icon-youtube {
+  @include sg-icon-before($icon-youtube, 1em);
+}
+.sg-icon-youtube2 {
+  @include sg-icon-before($icon-youtube2, 1em);
+}
+.sg-icon-zoom-in {
+  @include sg-icon-before($icon-zoom-in, 1em);
+}
+.sg-icon-zoom-out {
+  @include sg-icon-before($icon-zoom-out, 1em);
+}

@@ -1,0 +1,8 @@
+// WARNING: don't edit icons.scss!
+// use gulp and icons.ect to generate it
+
+@include sg-fontface(<%- @fontName %>, <%- @fontName %>);
+
+<% for glyph in @glyphs: %>
+$icon-<%- glyph.name %>: "\<%- glyph.codepoint.toString(16).toUpperCase() %>";
+<% end %>

@@ -1,0 +1,29 @@
+<div class="sg-sample">
+  <table class="sg-icon-martrix">
+    <% for glyph in @glyphs: %>
+      <tr>
+        <th colspan="6">
+          <b><%- glyph.name %></b>
+        </th>
+      </tr>
+      <tr>
+        <% for size in [2..3]: %>
+          <td class="size<%- size %>" colspan="3">
+            <span class="sg-icon-<%- glyph.name %>">
+              Font-Size <%- size %>
+            </span>
+          </td>
+        <% end %>
+      </tr>
+      <tr>
+        <% for size in [4..9]: %>
+          <td class="size<%- size %>">
+            <span class="sg-icon-<%- glyph.name %>">
+              Font-Size <%- size %>
+            </span>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+</div>

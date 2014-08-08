@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  background: #e5e5e5;
+  color: #333;
+  font: normal normal normal 14px/1.5 Arial, sans-serif;
+}
+code {
+  font-size: .857em;
+  line-height: 1.333;
+}
+.body :not(pre) > code,
+.body pre {
+  background-color: #f2f2f2;
+  color: #000;
+  white-space: pre-wrap;
+}
+.body :not(pre) > code {
+  padding: .2em;
+}
+a {
+  color: #48c;
+}
+hr {
+  border: none;
+  border-top: 3px solid #e5e5e5;
+  margin: 2em 0;
+}
+.target {
+  position: relative;
+  top: -85px;
+  display: block;
+}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  &.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.2);
+    li {
+      position: relative;
+      float: left;
+      white-space: nowrap;
+    }
+
+    .level-2 {
+      float: left;
+    }
+    .level-3 {
+      display: none;
+      position: absolute;
+      top: 32px;
+      left: 0;
+      box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+      li, a {
+        float: none;
+      }
+      li:only-child {
+        display: none;
+      }
+    }
+    li:hover > .level-3 {
+      display: block;
+    }
+    > li > a:hover,
+    .level-2 > li:hover,
+    .level-3 {
+      background: #222;
+    }
+
+    .controls {
+      float: right;
+      a {
+        text-transform: capitalize;
+      }
+      .level-3 {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    a,
+    .control {
+      float: left;
+      display: block;
+      padding: 7px 14px;
+      color: #777;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all .3s;
+      &:hover,
+      &.active {
+        color: #ddd;
+        transition: all .1s;
+      }
+      &.active {
+        background: #333;
+      }
+    }
+  }
+}
+
+
+.body {
+  padding-top: 32px;
+  text-align: center;
+  .section,
+  .intro-section {
+    margin: 25px 15px;
+    padding: 0;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+  }
+
+  .intro-section {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 27px 16px;
+    max-width: 1024px;
+  }
+
+  // .section,
+  // .section-title,
+  // .details-label {
+  //  transition: all .6s;
+  // }
+  .section {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border: 0 solid #333;
+    border-width: 25px 0 0;
+    line-height: 0; // fixes gap below sample iframe - display: block on sample doesn't work
+
+    .full & {
+      margin: 0;
+    }
+    .phone &,
+    .tablet & {
+      border-radius: 20px;
+      border-color: #333 #000 #000 #333;
+      box-shadow: 0 5px 20px rgba(0,0,0,.3);
+    }
+    .phone & {
+      width: 480px;
+      height: 320px;
+      border-width: 20px 30px;
+    }
+    .phone.portrait & {
+      width: 320px;
+      height: 480px;
+      border-width: 30px 20px;
+    }
+    .tablet & {
+      width: 1024px;
+      height: 768px;
+      border-width: 20px 27px;
+    }
+    .tablet.portrait & {
+      width: 768px;
+      height: 1024px;
+      border-width: 27px 20px;
+    }
+    .sample {
+      width: 100%;
+      margin: -20px 0 0;
+      .phone &,
+      .tablet & {
+        height: 100%;
+      }
+    }
+
+    .section-title {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      margin: 0;
+      font-size: 1em;
+      line-height: 20px;
+      color: #ddd;
+      .full & {
+        left: 14px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .details {
+      display: none;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 14px;
+      width: 100%;
+      overflow: auto;
+      background: #fff;
+      line-height: normal;
+      .full & {
+        position: relative;
+        top: -20px;
+        box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+      }
+      .phone &,
+      .tablet & {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .details-toggle {
+    display: none;
+  }
+  .details-label {
+    float: right;
+    position: relative;
+    top: -20px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #777;
+    font-size: 12px;
+    cursor: pointer;
+    transition: color .3s;
+    .full & {
+      padding-left: 0;
+      padding-right: 14px;
+    }
+  }
+
+  .Markup-toggle:checked ~ .Markup-label,
+  .SCSS-toggle:checked ~ .SCSS-label,
+  .CSS-toggle:checked ~ .CSS-label,
+  .Usage-toggle:checked ~ .Usage-label,
+  .Sample-toggle:checked ~ .Sample-label,
+  .details-label:hover {
+    color: #ddd;
+  }
+  .Markup-toggle:checked ~ .Markup-details,
+  .SCSS-toggle:checked ~ .SCSS-details,
+  .CSS-toggle:checked ~ .CSS-details,
+  .Usage-toggle:checked ~ .Usage-details {
+    display: block;
+  }
+}
