@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Styleguide</title>
-	<!-- build:css css/dcomm/styleguide.css -->
-	<link rel="stylesheet" href="/bower_components/prismjs/prism.css"/>
+	<!-- build:css styles/styleguide.css -->
+	<link rel="stylesheet" href="/prismjs/themes/prism.css"/>
 	<link rel="stylesheet" href="/styles/styleguide.css"/>
 	<!-- endbuild -->
 	<script>
@@ -13,14 +13,10 @@
 			document.cookie = [name, '=', val, '; path=/'].join('');
 		},
 		get: function(name) {
-			var pair = document.cookie.match(new RegExp(name + '=([^;]+)'))
+			var pair = document.cookie.match(new RegExp(name + '=([^;]+)'));
 			return !!pair ? pair[1] : null;
 		}
 	};
-
-	function eraseCookie(name) {
-		createCookie(name,"",-1);
-	}
 
 	function resizeIframe(el) {
 		el.height = 0;
@@ -28,7 +24,9 @@
 	}
 
 	function resizeAllIframes() {
-		if (cookie.get('sg_layout') !== 'full') return;
+		if (cookie.get('sg_layout') !== 'full') {
+      return;
+    }
 		var iframes = document.getElementsByTagName('iframe');
 		for (var i = 0, l = iframes.length; i < l; ++i) {
 			resizeIframe(iframes[i]);
@@ -36,7 +34,7 @@
 	}
 
 	function switchControl(el) {
-		var nl = el.parentNode.parentNode.getElementsByTagName("a");
+		var nl = el.parentNode.parentNode.getElementsByTagName('a');
 		for (var i = 0, l = nl.length; i < l; ++i) {
 			nl[i].className = '';
 		}
@@ -212,9 +210,9 @@
 		<% end %>
 	</div>
 
-	<!-- build:js js/dcomm/styleguide.js -->
-	<script src="/bower_components/prismjs/prism.js"></script>
-	<script src="/bower_components/prismjs/components/prism-scss.js"></script>
+	<!-- build:js scripts/styleguide.js -->
+	<script src="/prismjs/prism.js"></script>
+	<script src="/prismjs/components/prism-scss.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

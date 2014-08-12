@@ -19,6 +19,45 @@
     font-style: $style;
   }
 }
+@mixin sg-fontsize($fontsize:$sg-base-fontsize, $lineheight:$sg-base-lineheight) {
+  font-size: $fontsize;
+  font-size: ($fontsize / 10px) + rem;
+  line-height: $lineheight / $fontsize;
+}
+@mixin sg-fontsize-0 {
+  @include sg-fontsize($sg-fontsize-0, $sg-lineheight-0);
+}
+@mixin sg-fontsize-1 {
+  @include sg-fontsize($sg-fontsize-1, $sg-lineheight-1);
+}
+@mixin sg-fontsize-2 {
+  @include sg-fontsize($sg-fontsize-2, $sg-lineheight-2);
+}
+@mixin sg-fontsize-s2 {
+  @include sg-fontsize($sg-fontsize-3, $sg-lineheight-3);
+}
+@mixin sg-fontsize-3 {
+  @include sg-fontsize($sg-fontsize-3, $sg-lineheight-3);
+}
+@mixin sg-fontsize-4 {
+  @include sg-fontsize($sg-fontsize-4, $sg-lineheight-4);
+}
+@mixin sg-fontsize-5 {
+  @include sg-fontsize($sg-fontsize-5, $sg-lineheight-5);
+}
+@mixin sg-fontsize-6 {
+  @include sg-fontsize($sg-fontsize-6, $sg-lineheight-6);
+}
+@mixin sg-fontsize-7 {
+  @include sg-fontsize($sg-fontsize-7, $sg-lineheight-7);
+}
+@mixin sg-fontsize-8 {
+  @include sg-fontsize($sg-fontsize-8, $sg-lineheight-8);
+}
+@mixin sg-fontsize-9 {
+  @include sg-fontsize($sg-fontsize-9, $sg-lineheight-9);
+}
+
 @mixin sg-iconfont {
   @include sg-fontsmoothing-grayscale;
   font-family: $sg-icon-font;

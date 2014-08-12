@@ -14,8 +14,13 @@
     vertical-align: baseline;
   }
 }
+.sg-icon {
+  @include sg-icon-before("", 1em);
+}
 <% for glyph in @glyphs: %>
 .sg-icon-<%- glyph.name %> {
-  @include sg-icon-before($icon-<%- glyph.name %>, 1em);
+  &:before {
+    content: $icon-<%- glyph.name %>
+  }
 }
 <% end %>

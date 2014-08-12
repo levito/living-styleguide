@@ -6,3 +6,37 @@ html {
   font-family: $sg-base-font;
   font-size: 62.5%;
 }
+.h1,
+.fontsize1 {
+  @include sg-fontsize-1;
+}
+.h2,
+.fontsize2 {
+  @include sg-fontsize-2;
+}
+.h3,
+.fontsize3 {
+  @include sg-fontsize-3;
+}
+.h4,
+.fontsize4 {
+  @include sg-fontsize-4;
+}
+.h5,
+.fontsize5 {
+  @include sg-fontsize-5;
+}
+.h6,
+.fontsize6 {
+  @include sg-fontsize-6;
+}
+.h7,
+.fontsize7 {
+  @include sg-fontsize-7;
+}
+.fontsize8 {
+  @include sg-fontsize-8;
+}
+.fontsize9 {
+  @include sg-fontsize-9;
+}

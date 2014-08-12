@@ -1,4 +1,3 @@
-/* global require */
 'use strict';
 
 var config = {
@@ -20,9 +19,9 @@ var gulp        = require('gulp');
 var $           = require('gulp-load-plugins')();
 var path        = require('path');
 var del         = require('del');
-var lazypipe    = require('lazypipe');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
+var styleguide  = require('./styleguide');
 
 
 gulp.task('styles', function () {
@@ -82,7 +81,6 @@ gulp.task('views', function () {
 
 
 gulp.task('styleguide', function () {
-  var styleguide = require('./styleguide');
   var render = function (files, navitems, sections, dest) {
     return gulp.src(['app/views/layouts/styleguide.ect'])
       .pipe($.consolidate('ect', {
@@ -91,9 +89,7 @@ gulp.task('styleguide', function () {
         sections: sections
       }))
       .pipe($.rename(function (file) {
-        file.dirname += dest.split(
-          path.join(__dirname, 'app', 'views', 'pages', 'styleguide')
-        )[1];
+        file.dirname += dest.split('app/views/pages/styleguide')[1];
         file.basename = 'index';
         file.extname = '.html';
       }))
@@ -151,6 +147,58 @@ gulp.task('styleguide', function () {
 });
 
 
+gulp.task('assets', ['styles', 'scripts'], function () {
+  return gulp.src([
+      'app/**/*',
+      '!app/iconfont',
+      '!app/iconfont/**/*',
+      '!app/views',
+      '!app/views/**/*',
+      '!app/**/*.scss'
+    ])
+    .pipe(gulp.dest('.tmp'))
+    .pipe($.size({title: 'assets'}));
+});
+
+
+gulp.task('html', ['views', 'styleguide', 'assets'], function () {
+  var assets = $.useref.assets({searchPath: '{.tmp,app,node_modules}'});
+
+  return gulp.src([
+      '.tmp/**/*.html',
+      '!.tmp/styleguide/*/**/*.html' // parsing styleguide/index.html is enough
+    ])
+    .pipe(assets)
+    .pipe($.if('**/*.js', $.uglify()))
+    .pipe($.if('**/*.css', $.csso()))
+    .pipe(assets.restore())
+    .pipe($.useref())
+    .pipe(gulp.dest('dist'))
+    .pipe($.size({title: 'html'}));
+});
+
+
+gulp.task('images', function () {
+  return gulp.src([
+      path.join('app', config.images, '**/*')
+    ])
+    .pipe($.cache($.imagemin({
+      optimizationLevel: 3,
+      progressive: true,
+      interlaced: true
+    })))
+    .pipe(gulp.dest(path.join('dist', config.images)))
+    .pipe($.size({title: 'images'}));
+});
+
+
+gulp.task('fonts', function () {
+  return gulp.src(path.join('app', config.fonts, '**/*.{eot,svg,ttf,woff}'))
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe($.size({title: 'fonts'}));
+});
+
+
 gulp.task('iconfont', function () {
   var fontName = 'sg-icons';
 
@@ -199,11 +247,24 @@ gulp.task('iconfont', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 
+gulp.task('build', ['html', 'images', 'fonts'], function () {
+  return gulp.src([
+      '.tmp/styleguide/**/*',
+      '!**/*.ect',
+      '!**/*.html',
+      '!**/*.md',
+      '!**/*.scss'
+    ])
+    .pipe(gulp.dest('dist/styleguide'))
+    .pipe($.size({title: 'build'}));
+});
+
+
 gulp.task('serve', ['views', 'styles', 'scripts', 'styleguide'], function () {
   browserSync({
     notify: false,
     server: {
-      baseDir: ['.tmp', 'app']
+      baseDir: ['.tmp', 'app', 'node_modules']
     }
   });
 
@@ -223,6 +284,6 @@ gulp.task('serve', ['views', 'styles', 'scripts', 'styleguide'], function () {
 });
 
 
-gulp.task('default', function() {
-  gulp.start('serve');
+gulp.task('default', ['clean'], function() {
+  gulp.start('build');
 });
