@@ -82,7 +82,7 @@ gulp.task('views', function () {
 
 gulp.task('styleguide', function () {
   var render = function (files, navitems, sections, dest) {
-    return gulp.src(['app/views/layouts/styleguide.ect'])
+    return gulp.src('app/views/layouts/styleguide.ect')
       .pipe($.consolidate('ect', {
         files: files,
         navitems: navitems,
@@ -106,7 +106,7 @@ gulp.task('styleguide', function () {
     scss:   $.clone.sink()
   };
 
-  return gulp.src(['app/views/pages/styleguide/**'])
+  return gulp.src('app/views/pages/styleguide/**')
     .pipe($.plumber())
     .pipe(filter.md)
     .pipe($.markdown())
@@ -161,13 +161,10 @@ gulp.task('assets', ['styles', 'scripts'], function () {
 });
 
 
-gulp.task('html', ['views', 'styleguide', 'assets'], function () {
+gulp.task('html', ['assets', 'views', 'styleguide'], function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app,node_modules}'});
 
-  return gulp.src([
-      '.tmp/**/*.html',
-      '!.tmp/styleguide/*/**/*.html' // parsing styleguide/index.html is enough
-    ])
+  return gulp.src('.tmp/**/*.html')
     .pipe(assets)
     .pipe($.if('**/*.js', $.uglify()))
     .pipe($.if('**/*.css', $.csso()))
@@ -179,9 +176,7 @@ gulp.task('html', ['views', 'styleguide', 'assets'], function () {
 
 
 gulp.task('images', function () {
-  return gulp.src([
-      path.join('app', config.images, '**/*')
-    ])
+  return gulp.src(path.join('app', config.images, '**/*'))
     .pipe($.cache($.imagemin({
       optimizationLevel: 3,
       progressive: true,
@@ -202,7 +197,7 @@ gulp.task('fonts', function () {
 gulp.task('iconfont', function () {
   var fontName = 'sg-icons';
 
-  return gulp.src([path.join(config.icons, 'icons/*.svg')])
+  return gulp.src(path.join(config.icons, 'icons/*.svg'))
     .pipe($.imagemin({
       svgoPlugins: [{
         convertShapeToPath: true,
@@ -249,11 +244,7 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('build', ['html', 'images', 'fonts'], function () {
   return gulp.src([
-      '.tmp/styleguide/**/*',
-      '!**/*.ect',
-      '!**/*.html',
-      '!**/*.md',
-      '!**/*.scss'
+      '.tmp/styleguide/**/*.css'
     ])
     .pipe(gulp.dest('dist/styleguide'))
     .pipe($.size({title: 'build'}));
