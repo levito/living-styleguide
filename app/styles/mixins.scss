@@ -62,7 +62,7 @@
   @include sg-fontsmoothing-grayscale;
   font-family: $sg-icon-font;
 }
-@mixin sg-icon-before($char, $width:1.5em, $align:left, $valign:-12%) {
+@mixin sg-icon-before($char:"", $width:auto, $align:left, $valign:-12%) {
   &:before {
     @include sg-iconfont;
     content: "#{$char}";
@@ -72,7 +72,7 @@
     vertical-align: $valign;
   }
 }
-@mixin sg-icon-after($char, $width:1.5em, $align:right, $valign:-12%) {
+@mixin sg-icon-after($char:"", $width:auto, $align:right, $valign:-12%) {
   &:after {
     @include sg-iconfont;
     content: "#{$char}";
