@@ -1,3 +1,4 @@
+/* jshint camelcase: false, jquery: false */
 'use strict';
 
 var config = {
@@ -43,7 +44,10 @@ gulp.task('styles', function () {
 
 
 gulp.task('scripts', function () {
-  return gulp.src(path.join('app', config.scripts, '**/*.js'))
+  return gulp.src([
+      path.join('app', config.scripts, '**/*.js'),
+      path.join('!app', config.scripts, 'lib/**/*.js')
+    ])
     .pipe($.plumber())
     .pipe($.jshint())
     .pipe($.jshint.reporter(require('jshint-stylish')))

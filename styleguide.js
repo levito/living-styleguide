@@ -6,8 +6,9 @@ module.exports = function (files, callback) {
   // converts '01-my_test-pattern_1' to 'My Test-pattern 1'
   function toTitlestring(txt) {
     txt = txt.split(path.sep).pop();
-    while (txt.charAt(0).match(/[\d\s\._-]/))
+    while (txt.charAt(0).match(/[\d\s\._-]/)) {
       txt = txt.substr(1);
+    }
     return txt.replace(/_/g, ' ')
       .replace(/\w\S*/g, function (txt) {
         return txt.charAt(0).toUpperCase() + txt.substr(1);
