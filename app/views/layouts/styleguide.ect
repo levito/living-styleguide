@@ -7,69 +7,8 @@
   <link rel="stylesheet" href="/prismjs/themes/prism.css"/>
   <link rel="stylesheet" href="/styles/styleguide.css"/>
   <!-- endbuild -->
-  <script>
-  var cookie = {
-    set: function(name, val) {
-      document.cookie = [name, '=', val, '; path=/'].join('');
-    },
-    get: function(name) {
-      var pair = document.cookie.match(new RegExp(name + '=([^;]+)'));
-      return !!pair ? pair[1] : null;
-    }
-  };
-
-  function resizeIframe(el) {
-    el.height = 0;
-    el.height = el.contentWindow.document.body.scrollHeight;
-  }
-
-  function resizeAllIframes() {
-    if (cookie.get('sg_layout') !== 'full') {
-      return;
-    }
-    var iframes = document.getElementsByTagName('iframe');
-    for (var i = 0, l = iframes.length; i < l; ++i) {
-      resizeIframe(iframes[i]);
-    }
-  }
-
-  function switchControl(el) {
-    var nl = el.parentNode.parentNode.getElementsByTagName('a');
-    for (var i = 0, l = nl.length; i < l; ++i) {
-      nl[i].className = '';
-    }
-    el.className = 'active';
-  }
-
-  function switchLayoutView(el) {
-    switchControl(el);
-    document.body.className = el.textContent.trim();
-    cookie.set('sg_layout', el.getAttribute('id'));
-    resizeAllIframes();
-  }
-
-  function switchDetailsView(el) {
-    switchControl(el);
-    var resetNl = document.getElementsByClassName('Sample-toggle');
-    var newNl = document.getElementsByClassName(el.textContent.trim() + '-toggle');
-    var nl = [].slice.call(resetNl).concat([].slice.call(newNl));
-    for (var i = 0, l = nl.length; i < l; ++i) {
-      nl[i].click();
-    }
-    cookie.set('sg_details', el.getAttribute('id'));
-  }
-
-  function restoreViewState() {
-    if (cookie.get('sg_layout')) {
-      switchLayoutView(document.getElementById(cookie.get('sg_layout')));
-    }
-    if (cookie.get('sg_details')) {
-      switchDetailsView(document.getElementById(cookie.get('sg_details')));
-    }
-  }
-  </script>
 </html>
-<body class="full" onload="restoreViewState()" onresize="resizeAllIframes()">
+<body class="full">
   <ul class="header nav">
     <% for item in @navitems: %>
       <li>
@@ -120,9 +59,9 @@
             <% for layout in ['full', 'tablet landscape', 'tablet portrait', 'phone landscape', 'phone portrait']: %>
               <li>
                 <a href="javascript://" id="<%- layout.split(' ').join('-') %>"
-                  onclick="switchLayoutView(this)"
-                  <%- 'class=active' if layout == 'full' %>
-                ><%- layout %></a>
+                  class="js_layout <%- 'active' if layout == 'full' %>">
+                  <%- layout %>
+                </a>
               </li>
             <% end %>
           </ul>
@@ -135,8 +74,7 @@
             <% for details in ['Sample', 'Usage', 'Markup', 'CSS', 'SCSS']: %>
               <li>
                 <a href="javascript://" id="<%- details %>"
-                  <%- 'class="active"' if details == 'Sample' %>
-                  onclick="switchDetailsView(this)">
+                  class="js_details <%- 'active' if details == 'Sample' %>">
                   <%- details %>
                 </a>
               </li>
@@ -201,9 +139,7 @@
 
         <% if section.Markup?: %>
           <iframe class="sample" frameborder="0"
-            src="<%- section.name %>.html<%- param %>"
-            onload="resizeIframe(this)"
-            onresize="resizeIframe(this)"></iframe>
+            src="<%- section.name %>.html<%- param %>"></iframe>
         <% end %>
       </div>
 
@@ -213,6 +149,8 @@
   <!-- build:js /scripts/styleguide.js -->
   <script src="/prismjs/prism.js"></script>
   <script src="/prismjs/components/prism-scss.js"></script>
+  <script src="/scripts/lib/jquery-1.11.1.js"></script>
+  <script src="/scripts/styleguide.js"></script>
   <!-- endbuild -->
 </body>
 </html>
