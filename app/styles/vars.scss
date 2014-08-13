@@ -1,3 +1,9 @@
+// colors
+$sg-black: #000;
+$sg-white: #fff;
+$sg-darkgray: #363534;
+$sg-orangered: #ff4600;
+
 // fonts
 $sg-base-font: Helvetica Neue, HelveticaNeue, Arial, Helvetica, sans-serif;
 $sg-highlight-font: Georgia, Times New Roman, Times, serif;
@@ -23,3 +29,41 @@ $sg-fontsize-8: 13px; // small copy, inputs, small button, labels
 $sg-lineheight-8: 16px;
 $sg-fontsize-9: 12px; // smallprint
 $sg-lineheight-9: 14px;
+// defaults
+$sg-base-fontsize: $sg-fontsize-7;
+$sg-base-lineheight: $sg-lineheight-7;
+$sg-paragraph-margin: $sg-base-lineheight;
+
+
+// grid
+$sg-screen-xs: 480px;
+$sg-screen-sm: 720px;
+$sg-screen-md: 980px;
+$sg-screen-lg: 1280px;
+$sg-screen-xl: 1800px;
+$sg-screen-xs-1: ($sg-screen-xs - 1px);
+$sg-screen-sm-1: ($sg-screen-sm - 1px);
+$sg-screen-md-1: ($sg-screen-md - 1px);
+$sg-screen-lg-1: ($sg-screen-lg - 1px);
+$sg-screen-xl-1: ($sg-screen-xl - 1px);
+
+$sg-grid-gutter-xs: 10px;
+$sg-grid-gutter-sm: 20px;
+$sg-grid-gutter-md: 30px;
+$sg-grid-gutter-lg: 40px;
+$sg-grid-gutter-xl: 50px;
+$sg-grid-gutter: $sg-grid-gutter-md;
+
+// mediaqueries
+$sg-mq-max-xs: unquote("screen and (max-width: #{$sg-screen-xs-1})");
+$sg-mq-min-xs: unquote("screen and (min-width: #{$sg-screen-xs})");
+$sg-mq-max-sm: unquote("screen and (max-width: #{$sg-screen-sm-1})");
+$sg-mq-min-sm: unquote("screen and (min-width: #{$sg-screen-sm})");
+$sg-mq-max-md: unquote("screen and (max-width: #{$sg-screen-md-1})");
+$sg-mq-min-md: unquote("screen and (min-width: #{$sg-screen-md})");
+$sg-mq-max-lg: unquote("screen and (max-width: #{$sg-screen-lg-1})");
+$sg-mq-min-lg: unquote("screen and (min-width: #{$sg-screen-lg})");
+$sg-mq-max-xl: unquote("screen and (max-width: #{$sg-screen-xl-1})");
+$sg-mq-min-xl: unquote("screen and (min-width: #{$sg-screen-xl})");
+$sg-mq-landscape: unquote("and (orientation:landscape)");
+$sg-mq-portrait: unquote("and (orientation:portrait)");

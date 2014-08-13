@@ -1,0 +1,42 @@
+@import "app";
+
+.sg-fonts {
+  > p {
+    padding-top: $sg-paragraph-margin;
+    &:before,
+    &:after {
+      @include sg-fontsize-7;
+      display: block;
+      color: $sg-darkgray;
+      font-family: $sg-base-font;
+      font-weight: normal;
+    }
+  }
+}
+
+.sg-highlight-font {
+  font-family: $sg-highlight-font;
+  @include sg-fontsize-2;
+  &:before {
+    content: "highlight-font: ${sg-highlight-font} (for headlines, big sizes)";
+  }
+}
+.sg-base-font {
+  font-family: $sg-base-font;
+  @include sg-fontsize-3;
+  &:before {
+    content: "base-font: ${sg-base-font} (for copy text, small sizes)";
+  }
+}
+.sg-fontweight-normal {
+  font-weight: normal;
+  &:after {
+    content: "font-weight: normal";
+  }
+}
+.sg-fontweight-bold {
+  font-weight: bold;
+  &:after {
+    content: "font-weight: bold";
+  }
+}

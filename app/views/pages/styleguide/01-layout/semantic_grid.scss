@@ -1,0 +1,24 @@
+@import "app";
+
+.my-wrapper {
+  @extend %grid;
+}
+.my-main,
+.my-sidebar {
+  @extend %grid-col;
+}
+.my-main {
+  width: 70%;
+}
+.my-sidebar {
+  width: 30%;
+}
+
+
+@import "01-layout/show_grid";
+
+.sg-show-grid {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}

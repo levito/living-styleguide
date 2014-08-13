@@ -1,3 +1,31 @@
+// grids
+@mixin sg-grid-row($gutter:$sg-grid-gutter, $valign:stretch) {
+  @include sg-noGap();
+  margin: 0 0 0 -1*$gutter;
+  box-sizing: border-box;
+  // flexbox:
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: $valign;
+}
+@mixin sg-grid-col($gutter:$sg-grid-gutter, $valign:top) {
+  @include sg-reGap();
+  padding: 0 0 0 $gutter;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: $valign;
+  text-align: left;
+}
+@mixin sg-flex-wrapper($direction:row) {
+  display: flex;
+  flex-direction: $direction;
+}
+@mixin sg-flex-item($grow:1, $shrink:1, $basis:auto) {
+  flex: $grow $shrink $basis;
+}
+
+// fonts
 @mixin sg-fontsmoothing-grayscale {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -58,6 +86,16 @@
   @include sg-fontsize($sg-fontsize-9, $sg-lineheight-9);
 }
 
+// tools
+@mixin sg-noGap() {
+  font-size: 0;
+  line-height: 0;
+  word-spacing: -.31em;
+}
+@mixin sg-reGap($fonsize:$sg-base-fontsize, $lineheight:$sg-base-lineheight) {
+  @include sg-fontsize($fonsize, $lineheight);
+  word-spacing: 0;
+}
 @mixin sg-iconfont {
   @include sg-fontsmoothing-grayscale;
   font-family: $sg-icon-font;

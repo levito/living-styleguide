@@ -1,0 +1,35 @@
+@import "app";
+
+.sg-colors {
+  @include sg-grid-row(20px);
+  list-style: none;
+  padding: 0;
+  > li {
+    @include sg-grid-col(20px);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    &:before {
+      content: "";
+      display: block;
+      margin: 0 auto 10px;
+      width: 80px;
+      height: 80px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    }
+    &:after {
+      @include sg-fontsize-7;
+      display: block;
+      font-weight: normal;
+      color: $sg-darkgray;
+    }
+  }
+}
+.sg-color-orangered:before { background: $sg-orangered; }
+.sg-color-orangered:after  { content: "#{$sg-orangered}"; }
+.sg-color-black:before     { background: $sg-black; }
+.sg-color-black:after      { content: "#{$sg-black}"; }
+.sg-color-darkgray:before  { background: $sg-darkgray; }
+.sg-color-darkgray:after   { content: "#{$sg-darkgray}"; }
+.sg-color-white:before     { background: $sg-white; }
+.sg-color-white:after      { content: "#{$sg-white}"; }

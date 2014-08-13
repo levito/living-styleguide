@@ -5,7 +5,28 @@ html {
   -ms-text-size-adjust: 100%;
   font-family: $sg-base-font;
   font-size: 62.5%;
+  background: $sg-white;
+  color: $sg-black;
+  @media #{$sg-mq-max-md} {
+    font-size: 53.5%;
+  }
+  @media #{$sg-mq-min-lg} {
+    font-size: 71.5%;
+  }
 }
+body {
+  @include sg-fontsize-7;
+  margin: 20px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+  margin: 0 0 $sg-paragraph-margin;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: $sg-orangered;
+}
+
 .h1,
 .fontsize1 {
   @include sg-fontsize-1;
@@ -30,7 +51,6 @@ html {
 .fontsize6 {
   @include sg-fontsize-6;
 }
-body,
 .h7,
 .fontsize7 {
   @include sg-fontsize-7;
@@ -41,6 +61,7 @@ body,
 .fontsize9 {
   @include sg-fontsize-9;
 }
-a {
-  color: #ff4600;
+.h1, .h2, .h3, .h4 {
+  font-family: $sg-highlight-font;
+  font-weight: normal;
 }

@@ -1,0 +1,30 @@
+<div class="sg-sample">
+  <% for i in [1..6]: %>
+    <div class="grid">
+      <% for j in [1..i]: %>
+        <div class="grid-col w-1of<%- i %>">
+          <div class="sg-show-grid">
+            1/<%- i %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  <div class="grid">
+    <div class="grid-col">
+      <div class="sg-show-grid">Without width classes</div>
+    </div>
+    <div class="grid-col">
+      <div class="sg-show-grid">grid columns</div>
+    </div>
+    <div class="grid-col">
+      <div class="sg-show-grid">will have auto widths</div>
+    </div>
+    <div class="grid-col">
+      <div class="sg-show-grid">and wrap</div>
+    </div>
+    <div class="grid-col">
+      <div class="sg-show-grid">and expand as needed. See: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, obcaecati, corporis, quasi, distinctio sunt perspiciatis natus aspernatur earum dicta impedit sint accusantium alias voluptatum velit adipisci aut nemo nulla labore.</div>
+    </div>
+  </div>
+</div>
