@@ -30,6 +30,7 @@ html {
 .fontsize6 {
   @include sg-fontsize-6;
 }
+body,
 .h7,
 .fontsize7 {
   @include sg-fontsize-7;
@@ -39,4 +40,7 @@ html {
 }
 .fontsize9 {
   @include sg-fontsize-9;
+}
+a {
+  color: #ff4600;
 }
