@@ -20,7 +20,6 @@ All your code lives inside the `app` directory. Most paths can be configured ins
 Working with Styleguide Patterns
 --------------------------------
 
-
 ### Naming Scheme
 
 * keep all names lower-case
@@ -43,19 +42,3 @@ You can nest patterns 2 levels deep by creating directories. These levels are re
 Use the *Jump To* link on the right side of the navigation bar to scroll to single patterns. The *Layout* switch allows you to test responsive layout for common screen sizes. *Details* allows you to quickly show/hide usage notes and code samples for all patterns.
 
 You can also switch the details on the single patterns. Clicking the pattern name on the top right of a pattern will open it stand-alone in a new tab.
-
-
-Gulp Tasks
-----------
-
-* `gulp` (default): clean + build
-* `gulp build` builds the whole app and the styleguide to `dist`:
-  - preprocesses SCSS to CSS via ruby-sass
-  - concatenates and minifies CSS and JS
-  - optimizes images
-  - copies all assets like fonts, robots.txt, .htaccess
-* `gulp clean` cleans `.tmp` and `dist` directories
-* `gulp serve` starts a development server with BrowserSync for cross-device live reload
-  - watches for changes in styles, scripts and views
-  - on changes in `app/iconfont` the icon fonts and corresponding stylesheets will be rebuilt and reloaded
-* `gulp iconfont` rebuilds the icon fonts manually
