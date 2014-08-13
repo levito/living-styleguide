@@ -159,7 +159,6 @@
   var controls = document.querySelectorAll('.js_controls')[0];
 
   controls.addEventListener('click', function(e) {
-    e.preventDefault();
     var el = e.target;
     console.log('click', el, el.className);
     if (el.className.match('js_layout')) {
