@@ -1,4 +1,93 @@
-(function(window, $) {
+(function(window, undefined) {
+  if (typeof String.prototype.trim !== 'function') {
+    String.prototype.trim = function() {
+      return this.replace(/^\s+|\s+$/g, '');
+    };
+  }
+
+  // https://developer.mozilla.org/en/docs/Web/API/EventTarget.addEventListener
+  (function() {
+    if (!Event.prototype.preventDefault) {
+      Event.prototype.preventDefault = function() {
+        this.returnValue = false;
+      };
+    }
+    if (!Event.prototype.stopPropagation) {
+      Event.prototype.stopPropagation = function() {
+        this.cancelBubble = true;
+      };
+    }
+    if (!Element.prototype.addEventListener) {
+      var eventListeners = [];
+
+      var addEventListener = function(type, listener) {
+        var self = this;
+        var wrapper = function(e) {
+          e.target = e.srcElement;
+          e.currentTarget = self;
+          if (listener.handleEvent) {
+            listener.handleEvent(e);
+          } else {
+            listener.call(self, e);
+          }
+        };
+        if (type === 'DOMContentLoaded') {
+          var wrapper2 = function(e) {
+            if (document.readyState === 'complete') {
+              wrapper(e);
+            }
+          };
+          document.attachEvent('onreadystatechange', wrapper2);
+          eventListeners.push({
+            object: this,
+            type: type,
+            listener: listener,
+            wrapper: wrapper2
+          });
+
+          if (document.readyState === 'complete') {
+            var e = new Event();
+            e.srcElement = window;
+            wrapper2(e);
+          }
+        } else {
+          this.attachEvent('on' + type, wrapper);
+          eventListeners.push({
+            object: this,
+            type: type,
+            listener: listener,
+            wrapper: wrapper
+          });
+        }
+      };
+      var removeEventListener = function(type, listener) {
+        var counter = 0;
+        while (counter < eventListeners.length) {
+          var eventListener = eventListeners[counter];
+          if (eventListener.object === this && eventListener.type === type && eventListener.listener === listener) {
+            if (type === 'DOMContentLoaded') {
+              this.detachEvent('onreadystatechange', eventListener.wrapper);
+            } else {
+              this.detachEvent('on' + type, eventListener.wrapper);
+            }
+            break;
+          }
+          ++counter;
+        }
+      };
+      Element.prototype.addEventListener = addEventListener;
+      Element.prototype.removeEventListener = removeEventListener;
+      if (window.HTMLDocument) {
+        window.HTMLDocument.prototype.addEventListener = addEventListener;
+        window.HTMLDocument.prototype.removeEventListener = removeEventListener;
+      }
+      if (window.Window) {
+        window.Window.prototype.addEventListener = addEventListener;
+        window.Window.prototype.removeEventListener = removeEventListener;
+      }
+    }
+  }());
+
   var cookie = {
     set: function(name, val) {
       document.cookie = [name, '=', val, '; path=/'].join('');
@@ -44,22 +133,22 @@
   function switchControl(el) {
     var nodeList = el.parentNode.parentNode.getElementsByTagName('a');
     for (var i = 0, l = nodeList.length; i < l; ++i) {
-      nodeList[i].className = '';
+      nodeList[i].className = nodeList[i].className.replace('active', '').trim();
     }
-    el.className = 'active';
+    el.className += ' active';
   }
 
   function switchLayoutView(el) {
     switchControl(el);
-    document.body.className = el.textContent.trim();
+    document.body.className = el.innerHTML.trim();
     cookie.set('sg_layout', el.getAttribute('id'));
     resizeAllIframes();
   }
 
   function switchDetailsView(el) {
     switchControl(el);
-    var resetNodeList = document.getElementsByClassName('Sample-toggle');
-    var newNodeList = document.getElementsByClassName(el.textContent.trim() + '-toggle');
+    var resetNodeList = document.querySelectorAll('.Sample-toggle');
+    var newNodeList = document.querySelectorAll('.' + el.innerHTML.trim() + '-toggle');
     var nodeList = [].slice.call(resetNodeList).concat([].slice.call(newNodeList));
     for (var i = 0, l = nodeList.length; i < l; ++i) {
       nodeList[i].click();
@@ -67,18 +156,23 @@
     cookie.set('sg_details', el.getAttribute('id'));
   }
 
+  var controls = document.querySelectorAll('.js_controls')[0];
 
-  $('.js_layout').on('click', function(e) {
+  controls.addEventListener('click', function(e) {
     e.preventDefault();
-    switchLayoutView(this);
+    var el = e.target;
+    console.log('click', el, el.className);
+    if (el.className.match('js_layout')) {
+      console.log('switch layout');
+      switchLayoutView(el);
+    } else if (el.className.match('js_details')) {
+      console.log('switch details');
+      switchDetailsView(el);
+    }
   });
 
-  $('.js_details').on('click', function(e) {
-    e.preventDefault();
-    switchDetailsView(this);
-  });
-
-  $(window).on('load resize', debounce(resizeAllIframes, 50));
+  window.addEventListener('load', debounce(resizeAllIframes, 50));
+  window.addEventListener('resize', debounce(resizeAllIframes, 50));
 
 
   (function restoreViewState() {
@@ -89,4 +183,4 @@
       switchDetailsView(document.getElementById(cookie.get('sg_details')));
     }
   }());
-})(this, jQuery, undefined);
+})(this);
