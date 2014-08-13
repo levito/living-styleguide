@@ -6,13 +6,13 @@
 <% if @styleguide: %>
   <script>
   (function() {
-    if (location.search.indexOf("customCss") !== -1) {
+    if (location.search.indexOf('customCss') !== -1) {
       var cssTag = document.createElement('link');
       cssTag.rel = 'stylesheet';
       cssTag.href = location.href.split('.html')[0] + '.css';
       document.getElementsByTagName('head')[0].appendChild(cssTag);
     }
-  })();
+  }());
   </script>
 <% end %>
 

@@ -246,7 +246,7 @@ gulp.task('iconfont', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 
-gulp.task('build', ['html', 'images', 'fonts'], function () {
+gulp.task('build', ['html', 'images', 'iconfont', 'fonts'], function () {
   return gulp.src([
       '.tmp/styleguide/**/*.css'
     ])
@@ -266,8 +266,8 @@ gulp.task('serve', ['views', 'styles', 'scripts', 'styleguide'], function () {
   gulp.watch(path.join(config.icons, '**/*'), ['iconfont']);
   gulp.watch(path.join('app', config.styles, '**/*.scss'), ['styles']);
   gulp.watch(path.join('app', config.scripts, '**/*.js'), ['scripts']);
-  gulp.watch('app/views/**/*.ect', ['views']);
   gulp.watch('app/views/pages/styleguide/**/*', ['styleguide']);
+  gulp.watch('app/views/**/*.ect', ['views']);
 
   gulp.watch([
     '.tmp/**/*.html',

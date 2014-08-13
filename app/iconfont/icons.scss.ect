@@ -18,9 +18,7 @@
   @include sg-icon-before;
 }
 <% for glyph in @glyphs: %>
-.sg-icon-<%- glyph.name %> {
-  &:before {
-    content: $icon-<%- glyph.name %>
-  }
+.sg-icon-<%- glyph.name %>:before {
+  content: $icon-<%- glyph.name %>;
 }
 <% end %>
