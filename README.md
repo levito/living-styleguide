@@ -8,12 +8,13 @@ Features
 * create and maintain a living styleguide easily
   - compared to StyleDocco and KSS:
     + free organization structure, independent of your stylesheet file structure
-    + Atomic Design is possible
+    + Atomic Design is possible (nested patterns)
     + easily add documentation via Markdown files
   - compared to PatternLab:
     + no PHP dependency
     + less opinionated towards Atomic Design
     + easy documention via Markdown as opposed to PatternLab's JSON files
+    + completely sandboxed patterns via iframes
 * asset pipelining
   - preprocess SCSS via ruby-sass
   - concatenate and minify JS and CSS
@@ -30,6 +31,7 @@ Installation
 You need:
 * node.js, at least version 0.10
 * gulp (`npm install -g gulp`)
+* ruby and sass, at least version 3.2
 
 After cloning the project, do:
 `npm install`
