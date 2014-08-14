@@ -202,12 +202,13 @@ gulp.task('iconfont', function () {
   var fontName = 'sg-icons';
 
   return gulp.src(path.join(config.icons, 'icons/*.svg'))
-    .pipe($.imagemin({
-      svgoPlugins: [{
-        convertShapeToPath: true,
-        mergePaths: true
-      }]
-    }))
+    // imagemin may fix badly designed SVGs but may also destroy shapes
+    // .pipe($.imagemin({
+    //   svgoPlugins: [{
+    //     convertShapeToPath: true,
+    //     mergePaths: true
+    //   }]
+    // }))
     .pipe($.iconfont({
       fontName: fontName,
       fontHeight: 512,
@@ -279,6 +280,6 @@ gulp.task('serve', ['views', 'styles', 'scripts', 'styleguide'], function () {
 });
 
 
-gulp.task('default', ['clean'], function() {
+gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
