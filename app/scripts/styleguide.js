@@ -121,7 +121,7 @@
   }
 
   function resizeAllIframes() {
-    if (cookie.get('sg_layout') !== 'full') {
+    if (cookie.get('sg_layout') && cookie.get('sg_layout') !== 'full') {
       return;
     }
     var iframes = document.getElementsByTagName('iframe');
