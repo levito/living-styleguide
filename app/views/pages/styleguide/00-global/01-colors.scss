@@ -21,7 +21,7 @@
       @include sg-fontsize-7;
       display: block;
       font-weight: normal;
-      color: $sg-darkgray;
+      color: $sg-lightgray;
     }
   }
 }
@@ -31,5 +31,11 @@
 .sg-color-black:after      { content: "#{$sg-black}"; }
 .sg-color-darkgray:before  { background: $sg-darkgray; }
 .sg-color-darkgray:after   { content: "#{$sg-darkgray}"; }
+.sg-color-gray:before      { background: $sg-gray; }
+.sg-color-gray:after       { content: "#{$sg-gray}"; }
+.sg-color-lightgray:before { background: $sg-lightgray; }
+.sg-color-lightgray:after  { content: "#{$sg-lightgray}"; }
+.sg-color-silver:before    { background: $sg-silver; }
+.sg-color-silver:after     { content: "#{$sg-silver}"; }
 .sg-color-white:before     { background: $sg-white; }
 .sg-color-white:after      { content: "#{$sg-white}"; }

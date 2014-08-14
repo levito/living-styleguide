@@ -7,7 +7,7 @@
     &:after {
       @include sg-fontsize-7;
       display: block;
-      color: $sg-darkgray;
+      color: $sg-lightgray;
       font-family: $sg-base-font;
       font-weight: normal;
     }
@@ -18,14 +18,14 @@
   font-family: $sg-highlight-font;
   @include sg-fontsize-2;
   &:before {
-    content: "highlight-font: ${sg-highlight-font} (for headlines, big sizes)";
+    content: "highlight-font: #{$sg-highlight-font} (for headlines, big sizes)";
   }
 }
 .sg-base-font {
   font-family: $sg-base-font;
   @include sg-fontsize-3;
   &:before {
-    content: "base-font: ${sg-base-font} (for copy text, small sizes)";
+    content: "base-font: #{$sg-base-font} (for copy text, small sizes)";
   }
 }
 .sg-fontweight-normal {

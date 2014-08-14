@@ -3,7 +3,7 @@
 .sg-icon-martrix {
   th {
     padding: 20px 10px 10px;
-    border-top: 1px solid;
+    border-top: 1px solid $sg-silver;
     text-align: left;
   }
   tr:first-child > th {
@@ -13,10 +13,14 @@
   td {
     padding: 10px;
     vertical-align: baseline;
+    color: $sg-lightgray;
   }
 }
 .sg-icon {
   @include sg-icon-before;
+  &:before {
+    color: $sg-black;
+  }
 }
 .sg-icon-alert:before {
   content: $icon-alert;

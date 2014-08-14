@@ -13,6 +13,9 @@ html {
   @media #{$sg-mq-min-lg} {
     font-size: 71.5%;
   }
+  &.sg-sample {
+    overflow-y: auto;
+  }
 }
 body {
   @include sg-fontsize-7;
