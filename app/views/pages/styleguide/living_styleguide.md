@@ -13,7 +13,7 @@ All your code lives inside the `app` directory. Most paths can be configured ins
 * `views`: html templates
   - `layouts`: shared layouts
   - `partials`: shared partials
-  - `views`: single prototype pages
+  - `pages`: single prototype pages
     + `styleguide`: styleguide patterns
 
 
