@@ -160,12 +160,9 @@
 
   controls.addEventListener('click', function(e) {
     var el = e.target;
-    console.log('click', el, el.className);
     if (el.className.match('js_layout')) {
-      console.log('switch layout');
       switchLayoutView(el);
     } else if (el.className.match('js_details')) {
-      console.log('switch details');
       switchDetailsView(el);
     }
   });
