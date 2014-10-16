@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js sg-sample">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta charset="UTF-8" />
+<title>Living Styleguide</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+<link rel="stylesheet" href="/styles/app.css">
+
+  <script>
+  (function() {
+    if (location.search.indexOf('customCss') !== -1) {
+      var cssTag = document.createElement('link');
+      cssTag.rel = 'stylesheet';
+      cssTag.href = location.href.split('.html')[0] + '.css';
+      document.getElementsByTagName('head')[0].appendChild(cssTag);
+    }
+  }());
+  </script>
+
+</head>
+<body contenteditable="true" spellcheck="false">
+
+<div class="sg-sample sg-fonts">
+  <p class="sg-highlight-font sg-fontweight-normal">
+    Pack my box: with five dozen &bdquo;liquor-jugs&ldquo; (€ 17,95).
+  </p>
+  <p class="sg-highlight-font sg-fontweight-bold">
+    Pack my box: with five dozen &bdquo;liquor-jugs&ldquo; (€ 17,95).
+  </p>
+  <p class="sg-base-font sg-fontweight-normal">
+    Pack my box: with five dozen &bdquo;liquor-jugs&ldquo; (€ 17,95).
+  </p>
+  <p class="sg-base-font sg-fontweight-bold">
+    Pack my box: with five dozen &bdquo;liquor-jugs&ldquo; (€ 17,95).
+  </p>
+</div>
+
+<script src="/scripts/app.js"></script>
+</body>
+</html>

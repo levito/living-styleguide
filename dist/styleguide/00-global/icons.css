@@ -1,0 +1,1688 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\000031}}
+.grid {
+  font-size: 0;
+  line-height: 0;
+  word-spacing: -.31em;
+  margin: 0 0 0 -30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+@media screen and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\000031}}
+  .grid {
+    margin-left: -40px;
+  }
+}
+@media screen and (min-width: 1800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\000031}}
+  .grid {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\000031}}
+  .grid {
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\000031}}
+  .grid {
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 479px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\000031}}
+  .grid {
+    margin-left: -10px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000319}}
+.grid-col {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.28571;
+  word-spacing: 0;
+  padding: 0 0 0 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+@media screen and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000319}}
+  .grid-col {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000319}}
+  .grid-col {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000319}}
+  .grid-col {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000319}}
+  .grid-col {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000319}}
+  .grid-col {
+    padding-left: 10px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000338}}
+.center-grid {
+  text-align: center;
+  justify-content: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000342}}
+.right-grid {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000347}}
+.top-grid {
+  align-items: flex-start;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000351}}
+.middle-grid {
+  align-items: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000354}}
+.middle-grid > .grid-col {
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000358}}
+.baseline-grid {
+  align-items: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000361}}
+.baseline-grid > .grid-col {
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000365}}
+.bottom-grid {
+  align-items: flex-end;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/extends\.scss}line{font-family:\0000368}}
+.bottom-grid > .grid-col {
+  vertical-align: bottom;
+}
+
+@font-face {
+  font-family: "sg-icons";
+  src: url("/fonts/sg-icons-normal.eot");
+  src: local("sg-icons"), url("/fonts/sg-icons-normal.eot?#iefix") format("embedded-opentype"), url("/fonts/sg-icons-normal.woff") format("woff"), url("/fonts/sg-icons-normal.ttf") format("truetype"), url("/fonts/sg-icons-normal.svg#sg-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\000031}}
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Helvetica Neue, HelveticaNeue, Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  background: white;
+  color: black;
+}
+@media screen and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\000031}}
+  html {
+    font-size: 53.5%;
+  }
+}
+@media screen and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\000031}}
+  html {
+    font-size: 71.5%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000316}}
+html.sg-sample {
+  overflow-y: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000320}}
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.28571;
+  margin: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000324}}
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+  margin: 0 0 18px;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000329}}
+a {
+  color: #ff4600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000333}}
+.h1,
+.fontsize1 {
+  font-size: 70px;
+  font-size: 7rem;
+  line-height: 1.05714;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000337}}
+.h2,
+.fontsize2 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1.08333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000341}}
+.h3,
+.fontsize3 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.125;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000345}}
+.h4,
+.fontsize4 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.16667;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000349}}
+.h5,
+.fontsize5 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000353}}
+.h6,
+.fontsize6 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000357}}
+.h7,
+.fontsize7 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.28571;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000361}}
+.fontsize8 {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.23077;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000364}}
+.fontsize9 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.16667;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/basic\.scss}line{font-family:\0000367}}
+.h1, .h2, .h3, .h4 {
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000334}}
+.flex-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000337}}
+.flex-row-auto {
+  flex: 1 1 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000340}}
+.flex-row-full {
+  flex: 999 1 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000343}}
+.flex-fill {
+  flex-grow: 999;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000347}}
+.w-1of1 {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000348}}
+.w-1of2 {
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000349}}
+.w-1of3 {
+  width: 33.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000350}}
+.w-1of4 {
+  width: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000351}}
+.w-3of4 {
+  width: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000352}}
+.w-1of5 {
+  width: 20%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000353}}
+.w-2of3 {
+  width: 66.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000354}}
+.w-2of5 {
+  width: 40%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000355}}
+.w-3of5 {
+  width: 60%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000356}}
+.w-4of5 {
+  width: 80%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000357}}
+.w-1of6 {
+  width: 16.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000358}}
+.w-5of6 {
+  width: 83.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000359}}
+.w-1of8 {
+  width: 12.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000360}}
+.w-3of8 {
+  width: 37.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000361}}
+.w-5of8 {
+  width: 62.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000362}}
+.w-7of8 {
+  width: 87.5%;
+}
+
+@media screen and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000365}}
+  .w-1of1-lg {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000366}}
+  .w-1of2-lg {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000367}}
+  .w-1of3-lg {
+    width: 33.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000368}}
+  .w-1of4-lg {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000369}}
+  .w-3of4-lg {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000370}}
+  .w-1of5-lg {
+    width: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000371}}
+  .w-2of3-lg {
+    width: 66.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000372}}
+  .w-2of5-lg {
+    width: 40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000373}}
+  .w-3of5-lg {
+    width: 60%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000374}}
+  .w-4of5-lg {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000375}}
+  .w-1of6-lg {
+    width: 16.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000376}}
+  .w-5of6-lg {
+    width: 83.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000377}}
+  .w-1of8-lg {
+    width: 12.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000378}}
+  .w-3of8-lg {
+    width: 37.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000379}}
+  .w-5of8-lg {
+    width: 62.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000380}}
+  .w-7of8-lg {
+    width: 87.5%;
+  }
+}
+@media screen and (min-width: 1800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000384}}
+  .w-1of1-xl {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000385}}
+  .w-1of2-xl {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000386}}
+  .w-1of3-xl {
+    width: 33.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000387}}
+  .w-1of4-xl {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000388}}
+  .w-3of4-xl {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000389}}
+  .w-1of5-xl {
+    width: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000390}}
+  .w-2of3-xl {
+    width: 66.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000391}}
+  .w-2of5-xl {
+    width: 40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000392}}
+  .w-3of5-xl {
+    width: 60%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000393}}
+  .w-4of5-xl {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000394}}
+  .w-1of6-xl {
+    width: 16.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000395}}
+  .w-5of6-xl {
+    width: 83.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000396}}
+  .w-1of8-xl {
+    width: 12.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000397}}
+  .w-3of8-xl {
+    width: 37.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000398}}
+  .w-5of8-xl {
+    width: 62.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\0000399}}
+  .w-7of8-xl {
+    width: 87.5%;
+  }
+}
+@media screen and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003103}}
+  .w-1of1-md {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003104}}
+  .w-1of2-md {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003105}}
+  .w-1of3-md {
+    width: 33.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003106}}
+  .w-1of4-md {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003107}}
+  .w-3of4-md {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003108}}
+  .w-1of5-md {
+    width: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003109}}
+  .w-2of3-md {
+    width: 66.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003110}}
+  .w-2of5-md {
+    width: 40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003111}}
+  .w-3of5-md {
+    width: 60%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003112}}
+  .w-4of5-md {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003113}}
+  .w-1of6-md {
+    width: 16.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003114}}
+  .w-5of6-md {
+    width: 83.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003115}}
+  .w-1of8-md {
+    width: 12.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003116}}
+  .w-3of8-md {
+    width: 37.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003117}}
+  .w-5of8-md {
+    width: 62.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003118}}
+  .w-7of8-md {
+    width: 87.5%;
+  }
+}
+@media screen and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003122}}
+  .w-1of1-sm {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003123}}
+  .w-1of2-sm {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003124}}
+  .w-1of3-sm {
+    width: 33.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003125}}
+  .w-1of4-sm {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003126}}
+  .w-3of4-sm {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003127}}
+  .w-1of5-sm {
+    width: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003128}}
+  .w-2of3-sm {
+    width: 66.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003129}}
+  .w-2of5-sm {
+    width: 40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003130}}
+  .w-3of5-sm {
+    width: 60%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003131}}
+  .w-4of5-sm {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003132}}
+  .w-1of6-sm {
+    width: 16.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003133}}
+  .w-5of6-sm {
+    width: 83.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003134}}
+  .w-1of8-sm {
+    width: 12.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003135}}
+  .w-3of8-sm {
+    width: 37.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003136}}
+  .w-5of8-sm {
+    width: 62.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003137}}
+  .w-7of8-sm {
+    width: 87.5%;
+  }
+}
+@media screen and (max-width: 479px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003141}}
+  .w-1of1-xs {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003142}}
+  .w-1of2-xs {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003143}}
+  .w-1of3-xs {
+    width: 33.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003144}}
+  .w-1of4-xs {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003145}}
+  .w-3of4-xs {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003146}}
+  .w-1of5-xs {
+    width: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003147}}
+  .w-2of3-xs {
+    width: 66.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003148}}
+  .w-2of5-xs {
+    width: 40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003149}}
+  .w-3of5-xs {
+    width: 60%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003150}}
+  .w-4of5-xs {
+    width: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003151}}
+  .w-1of6-xs {
+    width: 16.66667%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003152}}
+  .w-5of6-xs {
+    width: 83.33333%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003153}}
+  .w-1of8-xs {
+    width: 12.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003154}}
+  .w-3of8-xs {
+    width: 37.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003155}}
+  .w-5of8-xs {
+    width: 62.5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/grid\.scss}line{font-family:\00003156}}
+  .w-7of8-xs {
+    width: 87.5%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\000034}}
+.sg-icon-martrix th {
+  padding: 20px 10px 10px;
+  border-top: 1px solid #eeeeee;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\000039}}
+.sg-icon-martrix tr:first-child > th {
+  padding-top: 0;
+  border-top: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000313}}
+.sg-icon-martrix td {
+  padding: 10px;
+  vertical-align: baseline;
+  color: #bbbbbb;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/veileh\/work\/zz\/s2\/living-styleguide\/app\/styles\/mixins\.scss}line{font-family:\00003104}}
+.sg-icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: sg-icons;
+  content: "";
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  vertical-align: -12%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000321}}
+.sg-icon:before {
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000325}}
+.sg-icon-alert:before {
+  content: "\E001";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000328}}
+.sg-icon-alignment-align:before {
+  content: "\E002";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000331}}
+.sg-icon-alignment-aligned-to:before {
+  content: "\E003";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000334}}
+.sg-icon-alignment-unalign:before {
+  content: "\E004";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000337}}
+.sg-icon-arrow-down:before {
+  content: "\E005";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000340}}
+.sg-icon-arrow-left:before {
+  content: "\E006";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000343}}
+.sg-icon-arrow-right:before {
+  content: "\E007";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000346}}
+.sg-icon-arrow-small-down:before {
+  content: "\E008";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000349}}
+.sg-icon-arrow-small-left:before {
+  content: "\E009";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000352}}
+.sg-icon-arrow-small-right:before {
+  content: "\E00A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000355}}
+.sg-icon-arrow-small-up:before {
+  content: "\E00B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000358}}
+.sg-icon-arrow-up:before {
+  content: "\E00C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000361}}
+.sg-icon-beer:before {
+  content: "\E00D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000364}}
+.sg-icon-book:before {
+  content: "\E00E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000367}}
+.sg-icon-bookmark:before {
+  content: "\E00F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000370}}
+.sg-icon-briefcase:before {
+  content: "\E010";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000373}}
+.sg-icon-broadcast:before {
+  content: "\E011";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000376}}
+.sg-icon-browser:before {
+  content: "\E012";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000379}}
+.sg-icon-bug:before {
+  content: "\E013";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000382}}
+.sg-icon-calendar:before {
+  content: "\E014";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000385}}
+.sg-icon-check:before {
+  content: "\E015";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000388}}
+.sg-icon-checklist:before {
+  content: "\E016";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000391}}
+.sg-icon-chevron-down:before {
+  content: "\E017";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000394}}
+.sg-icon-chevron-left:before {
+  content: "\E018";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\0000397}}
+.sg-icon-chevron-right:before {
+  content: "\E019";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003100}}
+.sg-icon-chevron-up:before {
+  content: "\E01A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003103}}
+.sg-icon-circle-slash:before {
+  content: "\E01B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003106}}
+.sg-icon-circuit-board:before {
+  content: "\E01C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003109}}
+.sg-icon-clippy:before {
+  content: "\E01D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003112}}
+.sg-icon-clock:before {
+  content: "\E01E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003115}}
+.sg-icon-cloud-download:before {
+  content: "\E01F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003118}}
+.sg-icon-cloud-upload:before {
+  content: "\E020";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003121}}
+.sg-icon-code:before {
+  content: "\E021";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003124}}
+.sg-icon-color-mode:before {
+  content: "\E022";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003127}}
+.sg-icon-comment-discussion:before {
+  content: "\E023";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003130}}
+.sg-icon-comment:before {
+  content: "\E024";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003133}}
+.sg-icon-credit-card:before {
+  content: "\E025";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003136}}
+.sg-icon-dash:before {
+  content: "\E026";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003139}}
+.sg-icon-dashboard:before {
+  content: "\E027";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003142}}
+.sg-icon-database:before {
+  content: "\E028";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003145}}
+.sg-icon-device-camera-video:before {
+  content: "\E029";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003148}}
+.sg-icon-device-camera:before {
+  content: "\E02A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003151}}
+.sg-icon-device-desktop:before {
+  content: "\E02B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003154}}
+.sg-icon-device-mobile:before {
+  content: "\E02C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003157}}
+.sg-icon-diff-added:before {
+  content: "\E02D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003160}}
+.sg-icon-diff-ignored:before {
+  content: "\E02E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003163}}
+.sg-icon-diff-modified:before {
+  content: "\E02F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003166}}
+.sg-icon-diff-removed:before {
+  content: "\E030";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003169}}
+.sg-icon-diff-renamed:before {
+  content: "\E031";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003172}}
+.sg-icon-diff:before {
+  content: "\E032";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003175}}
+.sg-icon-ellipsis:before {
+  content: "\E033";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003178}}
+.sg-icon-eye:before {
+  content: "\E034";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003181}}
+.sg-icon-file-binary:before {
+  content: "\E035";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003184}}
+.sg-icon-file-code:before {
+  content: "\E036";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003187}}
+.sg-icon-file-directory:before {
+  content: "\E037";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003190}}
+.sg-icon-file-media:before {
+  content: "\E038";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003193}}
+.sg-icon-file-pdf:before {
+  content: "\E039";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003196}}
+.sg-icon-file-submodule:before {
+  content: "\E03A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003199}}
+.sg-icon-file-symlink-directory:before {
+  content: "\E03B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003202}}
+.sg-icon-file-symlink-file:before {
+  content: "\E03C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003205}}
+.sg-icon-file-text:before {
+  content: "\E03D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003208}}
+.sg-icon-file-zip:before {
+  content: "\E03E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003211}}
+.sg-icon-flame:before {
+  content: "\E03F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003214}}
+.sg-icon-fold:before {
+  content: "\E040";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003217}}
+.sg-icon-gear:before {
+  content: "\E041";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003220}}
+.sg-icon-gift:before {
+  content: "\E042";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003223}}
+.sg-icon-gist-secret:before {
+  content: "\E043";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003226}}
+.sg-icon-gist:before {
+  content: "\E044";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003229}}
+.sg-icon-git-branch:before {
+  content: "\E045";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003232}}
+.sg-icon-git-commit:before {
+  content: "\E046";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003235}}
+.sg-icon-git-compare:before {
+  content: "\E047";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003238}}
+.sg-icon-git-merge:before {
+  content: "\E048";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003241}}
+.sg-icon-git-pull-request:before {
+  content: "\E049";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003244}}
+.sg-icon-globe:before {
+  content: "\E04A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003247}}
+.sg-icon-graph:before {
+  content: "\E04B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003250}}
+.sg-icon-heart:before {
+  content: "\E04C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003253}}
+.sg-icon-history:before {
+  content: "\E04D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003256}}
+.sg-icon-home:before {
+  content: "\E04E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003259}}
+.sg-icon-horizontal-rule:before {
+  content: "\E04F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003262}}
+.sg-icon-hourglass:before {
+  content: "\E050";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003265}}
+.sg-icon-hubot:before {
+  content: "\E051";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003268}}
+.sg-icon-inbox:before {
+  content: "\E052";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003271}}
+.sg-icon-info:before {
+  content: "\E053";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003274}}
+.sg-icon-issue-closed:before {
+  content: "\E054";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003277}}
+.sg-icon-issue-opened:before {
+  content: "\E055";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003280}}
+.sg-icon-issue-reopened:before {
+  content: "\E056";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003283}}
+.sg-icon-jersey:before {
+  content: "\E057";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003286}}
+.sg-icon-jump-down:before {
+  content: "\E058";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003289}}
+.sg-icon-jump-left:before {
+  content: "\E059";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003292}}
+.sg-icon-jump-right:before {
+  content: "\E05A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003295}}
+.sg-icon-jump-up:before {
+  content: "\E05B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003298}}
+.sg-icon-key:before {
+  content: "\E05C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003301}}
+.sg-icon-keyboard:before {
+  content: "\E05D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003304}}
+.sg-icon-law:before {
+  content: "\E05E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003307}}
+.sg-icon-light-bulb:before {
+  content: "\E05F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003310}}
+.sg-icon-link-external:before {
+  content: "\E060";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003313}}
+.sg-icon-link:before {
+  content: "\E061";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003316}}
+.sg-icon-list-ordered:before {
+  content: "\E062";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003319}}
+.sg-icon-list-unordered:before {
+  content: "\E063";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003322}}
+.sg-icon-location:before {
+  content: "\E064";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003325}}
+.sg-icon-lock:before {
+  content: "\E065";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003328}}
+.sg-icon-logo-github:before {
+  content: "\E066";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003331}}
+.sg-icon-mail-read:before {
+  content: "\E067";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003334}}
+.sg-icon-mail-reply:before {
+  content: "\E068";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003337}}
+.sg-icon-mail:before {
+  content: "\E069";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003340}}
+.sg-icon-mark-github:before {
+  content: "\E06A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003343}}
+.sg-icon-markdown:before {
+  content: "\E06B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003346}}
+.sg-icon-megaphone:before {
+  content: "\E06C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003349}}
+.sg-icon-mention:before {
+  content: "\E06D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003352}}
+.sg-icon-microscope:before {
+  content: "\E06E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003355}}
+.sg-icon-milestone:before {
+  content: "\E06F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003358}}
+.sg-icon-mirror:before {
+  content: "\E070";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003361}}
+.sg-icon-mortar-board:before {
+  content: "\E071";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003364}}
+.sg-icon-move-down:before {
+  content: "\E072";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003367}}
+.sg-icon-move-left:before {
+  content: "\E073";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003370}}
+.sg-icon-move-right:before {
+  content: "\E074";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003373}}
+.sg-icon-move-up:before {
+  content: "\E075";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003376}}
+.sg-icon-mute:before {
+  content: "\E076";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003379}}
+.sg-icon-no-newline:before {
+  content: "\E077";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003382}}
+.sg-icon-octoface:before {
+  content: "\E078";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003385}}
+.sg-icon-organization:before {
+  content: "\E079";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003388}}
+.sg-icon-package:before {
+  content: "\E07A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003391}}
+.sg-icon-paintcan:before {
+  content: "\E07B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003394}}
+.sg-icon-pencil:before {
+  content: "\E07C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003397}}
+.sg-icon-person:before {
+  content: "\E07D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003400}}
+.sg-icon-pin:before {
+  content: "\E07E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003403}}
+.sg-icon-playback-fast-forward:before {
+  content: "\E07F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003406}}
+.sg-icon-playback-pause:before {
+  content: "\E080";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003409}}
+.sg-icon-playback-play:before {
+  content: "\E081";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003412}}
+.sg-icon-playback-rewind:before {
+  content: "\E082";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003415}}
+.sg-icon-plug:before {
+  content: "\E083";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003418}}
+.sg-icon-plus:before {
+  content: "\E084";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003421}}
+.sg-icon-podium:before {
+  content: "\E085";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003424}}
+.sg-icon-primitive-dot:before {
+  content: "\E086";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003427}}
+.sg-icon-primitive-square:before {
+  content: "\E087";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003430}}
+.sg-icon-pulse:before {
+  content: "\E088";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003433}}
+.sg-icon-puzzle:before {
+  content: "\E089";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003436}}
+.sg-icon-question:before {
+  content: "\E08A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003439}}
+.sg-icon-quote:before {
+  content: "\E08B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003442}}
+.sg-icon-radio-tower:before {
+  content: "\E08C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003445}}
+.sg-icon-repo-clone:before {
+  content: "\E08D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003448}}
+.sg-icon-repo-force-push:before {
+  content: "\E08E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003451}}
+.sg-icon-repo-forked:before {
+  content: "\E08F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003454}}
+.sg-icon-repo-pull:before {
+  content: "\E090";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003457}}
+.sg-icon-repo-push:before {
+  content: "\E091";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003460}}
+.sg-icon-repo:before {
+  content: "\E092";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003463}}
+.sg-icon-rocket:before {
+  content: "\E093";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003466}}
+.sg-icon-rss:before {
+  content: "\E094";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003469}}
+.sg-icon-ruby:before {
+  content: "\E095";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003472}}
+.sg-icon-screen-full:before {
+  content: "\E096";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003475}}
+.sg-icon-screen-normal:before {
+  content: "\E097";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003478}}
+.sg-icon-search:before {
+  content: "\E098";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003481}}
+.sg-icon-server:before {
+  content: "\E099";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003484}}
+.sg-icon-settings:before {
+  content: "\E09A";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003487}}
+.sg-icon-sign-in:before {
+  content: "\E09B";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003490}}
+.sg-icon-sign-out:before {
+  content: "\E09C";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003493}}
+.sg-icon-split:before {
+  content: "\E09D";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003496}}
+.sg-icon-squirrel:before {
+  content: "\E09E";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003499}}
+.sg-icon-star:before {
+  content: "\E09F";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003502}}
+.sg-icon-steps:before {
+  content: "\E0A0";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003505}}
+.sg-icon-stop:before {
+  content: "\E0A1";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003508}}
+.sg-icon-sync:before {
+  content: "\E0A2";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003511}}
+.sg-icon-tag:before {
+  content: "\E0A3";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003514}}
+.sg-icon-telescope:before {
+  content: "\E0A4";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003517}}
+.sg-icon-terminal:before {
+  content: "\E0A5";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003520}}
+.sg-icon-three-bars:before {
+  content: "\E0A6";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003523}}
+.sg-icon-tools:before {
+  content: "\E0A7";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003526}}
+.sg-icon-trashcan:before {
+  content: "\E0A8";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003529}}
+.sg-icon-triangle-down:before {
+  content: "\E0A9";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003532}}
+.sg-icon-triangle-left:before {
+  content: "\E0AA";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003535}}
+.sg-icon-triangle-right:before {
+  content: "\E0AB";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003538}}
+.sg-icon-triangle-up:before {
+  content: "\E0AC";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003541}}
+.sg-icon-unfold:before {
+  content: "\E0AD";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003544}}
+.sg-icon-unmute:before {
+  content: "\E0AE";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003547}}
+.sg-icon-versions:before {
+  content: "\E0AF";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003550}}
+.sg-icon-x:before {
+  content: "\E0B0";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/00-global\/icons\.scss}line{font-family:\00003553}}
+.sg-icon-zap:before {
+  content: "\E0B1";
+}

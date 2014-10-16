@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Styleguide</title>
+  <link rel="stylesheet" href="/styles/styleguide.css">
+</html>
+<body class="full">
+  <ul class="header nav">
+          <li>
+        <a href="/styleguide/">
+          Styleguide        </a>
+        <ul class="nav level-2">
+                      <li>
+              <a                 href="/styleguide/00-global/">
+                Global              </a>
+              <ul class="nav level-3">
+                                  <li>
+                    <a                       href="/styleguide/00-global/view_all/">
+                      View All                    </a>
+                  </li>
+                              </ul>
+            </li>
+                      <li>
+              <a                 href="/styleguide/01-layout/">
+                Layout              </a>
+              <ul class="nav level-3">
+                                  <li>
+                    <a                       href="/styleguide/01-layout/view_all/">
+                      View All                    </a>
+                  </li>
+                              </ul>
+            </li>
+                      <li>
+              <a class="active"                href="/styleguide/99-coding_guide/">
+                Coding Guide              </a>
+              <ul class="nav level-3">
+                                  <li>
+                    <a                       href="/styleguide/99-coding_guide/view_all/">
+                      View All                    </a>
+                  </li>
+                              </ul>
+            </li>
+                      <li>
+              <a                 href="/styleguide/view_all/">
+                View All              </a>
+              <ul class="nav level-3">
+                              </ul>
+            </li>
+                  </ul>
+      </li>
+        <li class="controls js_controls">
+      <ul class="nav level-2">
+        <li>
+          <a href="#" class="control">Jump To</a>
+          <ul class="nav level-3">
+                          <li>
+                <a href="#section__coding_guide">
+                  Coding Guide                </a>
+              </li>
+                      </ul>
+        </li>
+      </ul>
+      <ul class="nav level-2">
+        <li>
+          <span class="control">Layout</span>
+          <ul class="nav level-3">
+                          <li>
+                <a href="javascript://" id="full"
+                  class="js_layout active">
+                  full                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="tablet-landscape"
+                  class="js_layout ">
+                  tablet landscape                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="tablet-portrait"
+                  class="js_layout ">
+                  tablet portrait                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="phone-landscape"
+                  class="js_layout ">
+                  phone landscape                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="phone-portrait"
+                  class="js_layout ">
+                  phone portrait                </a>
+              </li>
+                      </ul>
+        </li>
+      </ul>
+      <ul class="nav level-2">
+        <li>
+          <span class="control">Details</span>
+          <ul class="nav level-3">
+                          <li>
+                <a href="javascript://" id="Sample"
+                  class="js_details active">
+                  Sample                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="Usage"
+                  class="js_details ">
+                  Usage                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="Markup"
+                  class="js_details ">
+                  Markup                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="CSS"
+                  class="js_details ">
+                  CSS                </a>
+              </li>
+                          <li>
+                <a href="javascript://" id="SCSS"
+                  class="js_details ">
+                  SCSS                </a>
+              </li>
+                      </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="body">
+    
+      <div class="intro-section">
+        <a class="target" id="section__coding_guide"></a>
+        <h1 class="section-title">
+                      Coding Guide                  </h1>
+
+                  <input type="radio" class="Usage-toggle details-toggle" checked/>
+        
+        
+        
+        
+                  <div class="details Usage-details">
+            <p>The guide takes inspiration from a few sources, credited in the inspiration section.</p>
+<hr>
+<h2 id="general">General</h2>
+<h3 id="be-consistent">Be consistent</h3>
+<p>This coding guide aims to shape a common ground for developing frontend web projects at SinnerSchrader. Everything in this document is optional to use but we strongly recommend to rely on this ruleset in order to establish a consistent codebase between projects. Consider this document as crucial part of your project, add it to the repository of the project and optionally update the paragraphs that you and your team like to do in a different way.</p>
+<h3 id="know-the-spec-">Know the spec!</h3>
+<p>It is essential that you know the specification of all standards that you use. It provides answers to almost every question on how to write your code and what to use.</p>
+<h3 id="separation-of-presentation-content-and-behavior">Separation of presentation, content and behavior</h3>
+<p>Separate presentation, content and behavior to ensure the upmost interoperability. Thereby each layer can be modified without having to update the other layers.</p>
+<h3 id="write-readable-code">Write readable code</h3>
+<p>Prefer readability and maintainability over premature optimization. Use comments where appropriate to describe the intention behind your code.</p>
+<h3 id="indent-code-consistently">Indent code consistently</h3>
+<p>More important than the eternal discussion of whether to use tabs or spaces is a project wide consistent use of indentation across all developers. Our recommendation is to use tabs to indent your code. The advantage is that every developer can set the tab width to the preferred value.</p>
+<p>One possible solution to tackle the issue of an inconsistent indentation is the use of an <a href="http://editorconfig.org/">editorconfig file</a>.</p>
+<hr>
+<h2 id="markup">Markup</h2>
+<h3 id="use-as-little-markup-as-possible">Use as little markup as possible</h3>
+<p>Markup should be used to describe content provide elements used for styling. Try to avoid empty elements or wrapping divs wherever possible. The cleaner the HTML, the better!</p>
+<h3 id="use-the-semantically-most-appropriate-element">Use the semantically most appropriate element</h3>
+<p>Choose semantically specific elements over <code>div</code> or <code>span</code>. This enables search engines and everyone else to get a semantic context for the information inside an element.</p>
+<h3 id="close-all-tags">Close all tags</h3>
+<p>Despite it is not mandatory to close void elements in HTML5 you should close all tags. Use <code>&lt;input type=&quot;text&quot; /&gt;</code> instead of <code>&lt;input type=&quot;text&quot;&gt;</code></p>
+<h3 id="use-double-quotes-for-attributes">Use double quotes for attributes</h3>
+<p>Again, there is no single &quot;right&quot; way for quoting attributes in HTML in the <a href="http://www.w3.org/TR/html4/intro/sgmltut.html#h-3.2.2">specification</a> but to stay consistent you should use double quotes in HTML.</p>
+<h3 id="avoid-inline-styles">Avoid inline styles</h3>
+<p>Using inline styles conflicts with the rule to separate presentation, content and behavior and is a sign of poor code quality. Just don&#39;t do it.</p>
+<h3 id="avoid-inline-event-handlers">Avoid inline event handlers</h3>
+<p>Using inline event handlers such as <code>&lt;span onclick=&quot;myFunc&quot;&gt;Link&lt;/span&gt;</code> conflicts with the rule to separate presentation, content and behavior. JavaScript should progressively enhance the user experience. Use classnames with a <code>js_</code> prefix and bind your event handlers to these classes in your JavaScript files.</p>
+<h3 id="no-protocol-but-lt-path-gt-">No protocol but &quot;//&lt;path&gt;&quot;</h3>
+<p>Try to strip the protocol whenever possible. Most CDNs serve their assets via <code>http</code> and <code>https</code>. Dropping the protocol from your reference forces the browser to use the same protocol the site is served with, which helps to avoid invalid https implementation.</p>
+<hr>
+<h2 id="styles">Styles</h2>
+<h3 id="avoid-ids">Avoid IDs</h3>
+<p>It is never safe to assume that you use one element only once. Even for logos, pages or any other element. Furthermore, an element with an ID will create a global variable in JavaScript holding a reference to the element in the DOM (see <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/browsers.html#named-access-on-the-window-object">&quot;named elements&quot; documented in the HTML standard</a>).</p>
+<h3 id="initial-layout-is-independent-from-javascript">Initial layout is independent from JavaScript</h3>
+<p>The initial layout of a page should look same with JavaScript enabled and disabled.
+All JavaScript should be at the end of page (s JavaScript), this is including Modernizr feature-tests. Prefer &quot;Graceful Degradation&quot; over feature-tests. When layout updates (depending on feature-tests) are applied to the page, they should be imperceptible: e.g. replacing <code>display:none</code> with <code>opacity:0</code> and <code>pointer-events:none</code>.</p>
+<h3 id="animate-an-interface-using-classes-not-inline-styles">Animate an interface using classes not inline styles</h3>
+<p>Animations belong to the presentation layer and therefore the necessary properties should be declared in your stylesheet rather than in the JavaScript code. Use JavaScript just to toggle the classes that define the the visual target state. Let CSS handle the transitions between the states. If you implement a more complex UI behavior try to use a minimum of DOM maniplations synchronized with the animation frame, and animate CSS properties that don&#39;t trigger a repaint.</p>
+<h3 id="selectors-should-be-max-four-levels-deep">Selectors should be max. four levels deep</h3>
+<p>Long selector chains are slower for the browser to evaluate and lead to specificity issues. If you feel like you need more than four levels in a selector then it&#39;s probably the better choice to add an additional class to the markup.</p>
+<p>Nice to read: <a href="http://thesassway.com/beginner/the-inception-rule">The inception rule</a></p>
+<h3 id="double-check-compiled-stylesheets">Double check compiled stylesheets</h3>
+<p>Use preprocessors to make your CSS easier to maintain but you should always double check the compiled output. It&#39;s easy to underestimate the resulting code bloat of overly specific selector nesting.</p>
+<h3 id="prefer-normalize-over-reset">Prefer normalize over reset</h3>
+<p>You should use the normalize.less from the boilerplate: <a href="http://nicolasgallagher.com/about-normalize-css/">Read why normalize is better than reset</a>.</p>
+<blockquote>
+<p>A global reset is a convenient way of ensuring consistent styling cross browser but it is often overkill and it makes CSS harder to debug in developer tools.</p>
+</blockquote>
+<h3 id="order-properties-box-border-background-text-other">Order properties: box, border, background, text &amp; other</h3>
+<p>Again, the only <em>correct</em> way to order properties is a consistent way. So pick a method and make sure the entire team is consistent in using that method. The recommended way of ordering properties is by impact (<a href="http://csscomb.com/">CSScomb</a> can help you here) and placing mixins at the end:</p>
+<pre><code class="lang-css">.example-property-order{
+    display: inline-block;
+    font-size: 10px;
+    line-height: 14px;
+    #boilerplate-tools &gt; .ir;
+}
+</code></pre>
+<h3 id="avoid-the-wildcard-selector-">Avoid the wildcard selector *</h3>
+<p>Some say it results in bad performance, some say it is okay to use it. We prefer not using the wildcard selector because it might become a performance issue and it definitely is a very bad style. Use the normalize stylesheet and you should never feel the need for the * selector.</p>
+<h3 id="use-shorthand-properties-unless-you-overwrite">Use shorthand properties unless you overwrite</h3>
+<p>CSS shorthand properties are preferred because of its terseness and flexibility. Use fully qualified properties if you overwrite inherited values to indicate that you were aware of the inheritance.</p>
+<h3 id="whitespace-between-and-the-value-no-space-between-classname-and-">Whitespace between : and the value; No space between classname and {</h3>
+<p>This coding style is a proposition. Make sure you are consistent within the project.</p>
+<pre><code class="lang-css">.classname{
+    property: value;
+}
+</code></pre>
+<h3 id="use-vendor-prefixes-correctly-painlessly">Use vendor prefixes correctly &amp; painlessly</h3>
+<p>Use <a href="https://github.com/ai/autoprefixer">autoprefixer</a> for vendor prefixes whenever possible. Since we use a CSS preprocessor (LESS &gt; SCSS) you may also implement vendor prefixes with mixins based on the browser matrix you are developing for. This provides high flexibility and maintainability.</p>
+<h3 id="avoid-css-hacks">Avoid CSS hacks</h3>
+<p>Always avoid the use of non standard compliant CSS hacks. CSS hacks are bad practice since most of them can be avoided by writing clean and clutterless code. If you feel the need to use a CSS hack think of feature detection libraries e.g. modernizr.</p>
+<h3 id="split-css-into-logical-units-during-development">Split CSS into logical units during development</h3>
+<p>Split CSS (LESS) files in logical units that are as small as possible but as big as necessary.</p>
+<h3 id="class-names-should-be-self-explanatory-but-short">Class names should be self explanatory but short</h3>
+<p>It should be possible to look at a class name and instantly have an idea what it represents. Keep it short and do not provide a detailed description in the class name, just a hint. If a detailed description is needed it belongs in a comment at the top of the class. If you abbreviate the class name make sure the abbreviation makes sense to everyone, not only you. E.g. <code>.nav</code> for <code>.navigation</code> is okay but <code>.atr</code> for <code>.author</code> is probably not.</p>
+<h3 id="don-t-re-invent-class-names-use-selectors-">Don&#39;t re-invent class names (use selectors)</h3>
+<p>If you have teasers in a sidebar and the footer you can use the same class name by making it unique through it&#39;s selector.
+<code>.footer .teaser</code> and <code>.sidebar .teaser</code> are better then <code>.footer-teaser</code> and <code>.sidebar-teaser</code>. Especially in CMS context it makes sense to have modules (markup) that are fully re-usable.</p>
+<h3 id="don-t-abuse-class-names">Don&#39;t abuse class names</h3>
+<p>Just don&#39;t: <code>.iReallyLikeToKeepSelectorsOnlyOneLevelBecauseIRead5YearsAgoSomeWhereBySomeOneThatsItsMuchMuchBetter-YeahThatsAGoodName</code></p>
+<h3 id="avoid-camelcaseclassnames">Avoid CamelCaseClassNames</h3>
+<p>Not all people write camelcase the same way. You should just use lowercase and lean class names.
+<code>.smallbreadcrumb</code> is better to remeber then <code>.smallBreadcrumb</code>.</p>
+<h3 id="don-t-qualify-class-selectors">Don&#39;t qualify class selectors</h3>
+<p>If you already use a class name, there is no need to qualify it. Unqualified selectors are independent from the (semantic) elements and help you separate presentation and content.</p>
+<h3 id="-important">!!important</h3>
+<p>Never use <code>!important</code>! If you want to overwrite a property and you don&#39;t know how read about <a href="http://www.w3.org/TR/css3-selectors/#specificity">selector specificity</a>. It is way better to break the rule &quot;<em>Selectors should be max. four levels deep</em>&quot; than to use <code>!important</code>.</p>
+<h3 id="avoid-floating-where-possible">Avoid floating where possible</h3>
+<p>If you use floats for layout you need clearfixes, which are CSS hacks and should be avoided. There are only very few cases in which floating makes sense: If you want text to actually float around another element e.g. an image, figure, table. Try to avoid them for layout whenever possible.</p>
+<h3 id="avoid-explicit-definition-of-width-and-height">Avoid explicit definition of width and height</h3>
+<p>The containing elements and their contents should define the width and hight of a module. You never know how much content a module will contain, and you often can&#39;t tell which container it will be placed in. Keep all module as flexible and reusable as possible.</p>
+<hr>
+<h2 id="javascript">Javascript</h2>
+<h3 id="don-t-over-optimize">Don&#39;t over-optimize</h3>
+<p>Write readable and maintainable code in favor of &quot;optimized&quot; code. Only optimize if there is a significant boost of performance. Over-optimized code is not intuitive.</p>
+<h3 id="use-whitespace">Use whitespace</h3>
+<p>Don&#39;t hold back with whitespace and line-breaks, it makes the code easier to scan and will be stripped out on the live system via minification anyway! It helps creating logically grouped code.</p>
+<h3 id="camelcase">CamelCase</h3>
+<p>Variables and classes are named in camel case. Variables start with a lowercase letter and classes with an uppercase letter.
+Only constants are written in all caps and separated with underscores.</p>
+<h3 id="var">var</h3>
+<p>Each new variable should get it&#39;s own var statement. This increases readability and makes the code less error prone (forget a comma and the variable is in the global scope). Also variables should be defined where they are needed or where it makes sense instead of in a huge pile somewhere in the code.</p>
+<h3 id="brackets">Brackets</h3>
+<p>For functions, loops, etc. the opening bracket is placed at the end of the line. The closing bracket is placed at the beginning of a new line</p>
+<h4 id="style-examples-">Style examples:</h4>
+<pre><code class="lang-javascript">var foo;
+var bar = &#39;foo&#39;;
+var myObject = {
+    foo: &#39;bar&#39;
+};
+var MyClass = function() {
+    if ( foo ) {
+        doSomething();
+    } else {
+        doSomethingElse();
+    }
+};
+var MY_CONSTANT = 42;
+</code></pre>
+<h3 id="use-semicolons">Use Semicolons</h3>
+<p>Even though semicolons are optional in JavaScript, you should use them! Leaving them out can have undesired side effects, also some weak minifiers might corrupt your code in the process.</p>
+<h3 id="comments">Comments</h3>
+<p>Code should be self commenting by use of senseful function and variable names. If you need to explain what a function does, you might consider to rewrite it.</p>
+<p>But you should comment special codelines which are not obvious for everyone, like fixes.
+Place these comments in an extra line above the code you describe.</p>
+<pre><code class="lang-javascript">// fix for Safari 6
+window.setTimeout(foo, 0);
+</code></pre>
+<h3 id="closures-namespace">Closures &amp; Namespace</h3>
+<p>You do not write code in the global namespace, always use closures!</p>
+<pre><code class="lang-javascript">(function(window) { /* your code here */ })(this);
+</code></pre>
+<p>If possible, you should use the commonJS module pattern and browserify to compile your code. This will automatically warp your logic in closures and prevent local variables to be exposed to the global scope.</p>
+<pre><code class="lang-javascript">var MyModule = function(args, ...) {
+    /* your code here */
+};
+module.exports = MyModule;
+</code></pre>
+<p>If some part of your code has be globally accessible you explicitly assign it to the <code>window</code> object under a namespace that suits the project.</p>
+<pre><code class="lang-javascript">window.s2.myVariable = [ ... ]
+</code></pre>
+<h3 id="literals">Literals</h3>
+<p>Prefer to use literals over constructor functions, they are more compact, can be initialized with values and are spotted more easily while reading.</p>
+<pre><code class="lang-javascript">// instead new Array();
+[1, 2, 3];
+
+// instead new Object();
+{&#39;one&#39;: 1, &#39;two&#39;: 2};
+// instead new RegExp();
+/^[a-z]$/;
+</code></pre>
+<h3 id="quotes">Quotes</h3>
+<p>Use single-quotes (&#39;) for strings in JavaScript. This way, it is more convenient to use HTML fragments in a string, because they use double-quotes (&quot;) and don&#39;t have to be escaped.</p>
+<pre><code class="lang-javascript">var awesomeButton = &#39;&lt;button class=&quot;awesome&quot;&gt;Awesome!&lt;/button&gt;&#39;;
+</code></pre>
+<h3 id="-strict-equal">(Strict) Equal</h3>
+<p>Prefer strict or typed equal (===) over the lose equal (==), it could prevent unexpected behavior. Exceptions are checks for truthy/falsy values or values that you can be certain of to return a specific type (e.g. Array.length always returns a number). You should always cast mixed types in the type you need.</p>
+<h3 id="libraries-plugins">Libraries/Plugins</h3>
+<p>Be as minimal as possible! Most of the time it is not smart to use a monolithic library or plugin, but rather write a custom version for your needs. This should save a lot of file size and - which is even more important - drastically increase performance. If you consider taking a plugin and rewrite it, you should be arware of license issues. A list of the SinnerSchrader best practices can be found in the S.OS. These blueprints are better than plugins because they only include the code that is always common, but don&#39;t implement special behavior.</p>
+<h3 id="always-javascript-">Always JavaScript?</h3>
+<p>Don&#39;t try to achieve things with JavaScript that can be done better with other techniques or tools. Prefer native elements and don&#39;t reinvent the wheel. Also animations/transitions have shifted from JavaScript to CSS, only trigger their start/end!</p>
+<hr>
+<h2 id="performance">Performance</h2>
+<blockquote>
+<p>[...] for most web pages, less than 10–20% of the end user response time is spent getting the HTML document from the web server to the browser. If you want to dramatically reduce the response times of your web pages, you have to focus on the other 80–90% of the end user experience. (Souders, Steve. 2007. <em>High Performance Web Sites</em>. O’Reilly Media, Inc.)</p>
+</blockquote>
+<p>Performance optimization of websites is the responsibility of every frontend developer. Make sure to read both books of Steve Souders on website performance.[^1]
+[^1]: <a href="http://www.amazon.de/High-Performance-Web-Sites-Faster-Loading/dp/0596529309/">High Performance Web Sites</a> and <a href="http://www.amazon.de/Even-Faster-Web-Sites-Performance/dp/0596522304/">Even Faster Web Sites</a> by Steve Souders.</p>
+<p>The rules summarized in this coding guide just give you a rough understanding what to is essential to know.</p>
+<h3 id="concat-an-minify-all-the-things-">Concat an minify all the things!</h3>
+<p>Concatenation and minification should be a essential part of your process. Serving the minimum of files possible that are as small as possible helps you speed up loading time.</p>
+<h3 id="put-css-in-head">Put CSS in HEAD</h3>
+<p>Reference the CSS file in the HEAD (use the <code>link</code> tag, not <code>@import</code>). This prevents <a href="http://en.wikipedia.org/wiki/Flash_of_unstyled_content">FOUC</a> and all downsides.</p>
+<h3 id="javascript-before-closing-body">JavaScript before closing BODY</h3>
+<p>Include the minified version of the JavaScript right before the closing BODY tag. Load scripts in the HEAD will <a href="http://www.stevesouders.com/blog/2010/09/30/render-first-js-second/">block the rendering</a> of the page during the time the script is retrieved form the server and interpreted by the JavaScript engine of the browser. Think about asynchronous and deferred loading of your scripts.</p>
+<h3 id="reduce-http-requests">Reduce HTTP requests</h3>
+<p>Reducing the number of HTTP requests will help improve loading times, since browsers can only handle a number of parallel downloads. Again, minify and concatenate your assets and use sprites. This issue may become irrelevant in HTML2.0/Speedy.</p>
+<h3 id="set-appropriate-cache-headers-and-use-cache-busting">Set appropriate cache headers and use cache busting</h3>
+<p><strong>Cache is King!</strong> Configure the cache headers to the max and use <a href="http://html5boilerplate.com/html5boilerplate-site/built/en_US/docs/cachebusting/">cache busting</a>. Consider a CDN like cloudfront.</p>
+<hr>
+<h2 id="images">Images</h2>
+<h3 id="use-retina-optimized-jpgs-for-photos">Use retina optimized JPGs for photos</h3>
+<p><a href="http://blog.netvlies.nl/design-interactie/retina-revolution/">Read how and why</a></p>
+<h3 id="optimize-images">Optimize images</h3>
+<p>Use tools like <a href="http://imageoptim.com/">imageOptim</a>, <a href="http://pngmini.com/">imageAlpha</a> or the respective command-line tools to losslessly reduce the file size of images.</p>
+<h3 id="use-iconfonts-or-svgs-whenever-possible">Use IconFonts or SVGs whenever possible</h3>
+<p>If possible use IconFonts or SVGs for icons. The browser support is quite good, you need no retina optimization and you can easily fall back to sprites.</p>
+<h3 id="use-css-sprites">Use CSS sprites</h3>
+<p>To minimize HTTP requests try to use one CSS sprite instead multiple small images.</p>
+<h3 id="progressive-jpg">Progressive JPG</h3>
+<p>Progressive JPGs have a much better perceived speed as they appear faster even though the actual loading speed is not faster. <a href="http://calendar.perfplanet.com/2012/progressive-jpegs-a-new-best-practice/">Read more about progressive JPGs</a>.</p>
+<hr>
+<h2 id="inspiration-and-further-reading">Inspiration and further reading</h2>
+<ul>
+<li><a href="https://github.com/byrichardpowell/CSS-Style/">https://github.com/byrichardpowell/CSS-Style/</a></li>
+<li><a href="https://smacss.com/">https://smacss.com/</a></li>
+<li><a href="http://isobar-idev.github.io/code-standards/">http://isobar-idev.github.io/code-standards/</a></li>
+<li><a href="http://www.yellowshoe.com.au/standards/">http://www.yellowshoe.com.au/standards/</a></li>
+<li><a href="https://github.com/stevekwan/best-practices">https://github.com/stevekwan/best-practices</a></li>
+<li><a href="https://github.com/airbnb/javascript">https://github.com/airbnb/javascript</a></li>
+<li><a href="https://github.com/rwldrn/idiomatic.js/">https://github.com/rwldrn/idiomatic.js/</a></li>
+</ul>
+          </div>
+        
+              </div>
+
+      </div>
+
+  <script src="/scripts/styleguide.js"></script>
+</body>
+</html>
