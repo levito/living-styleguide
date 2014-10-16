@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js sg-sample">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta charset="UTF-8" />
+<title>Living Styleguide</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+<link rel="stylesheet" href="/styles/app.css">
+
+  <script>
+  (function() {
+    if (location.search.indexOf('customCss') !== -1) {
+      var cssTag = document.createElement('link');
+      cssTag.rel = 'stylesheet';
+      cssTag.href = location.href.split('.html')[0] + '.css';
+      document.getElementsByTagName('head')[0].appendChild(cssTag);
+    }
+  }());
+  </script>
+
+</head>
+<body contenteditable="true" spellcheck="false">
+
+<div class="sg-sample">
+  <div class="my-wrapper">
+    <div class="my-main">
+      <div class="sg-show-grid">
+        <h1 class="h4">My Main</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, praesentium, nisi, beatae dolorum cum eaque quidem doloremque harum at debitis repellat laboriosam quaerat aliquid incidunt accusamus. Facere, accusamus similique impedit.</p>
+      </div>
+    </div>
+    <div class="my-sidebar">
+      <div class="sg-show-grid">
+        <h2 class="h4">My Sidebar</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/scripts/app.js"></script>
+</body>
+</html>

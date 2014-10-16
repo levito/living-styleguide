@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js sg-sample">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta charset="UTF-8" />
+<title>Living Styleguide</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+<link rel="stylesheet" href="/styles/app.css">
+
+  <script>
+  (function() {
+    if (location.search.indexOf('customCss') !== -1) {
+      var cssTag = document.createElement('link');
+      cssTag.rel = 'stylesheet';
+      cssTag.href = location.href.split('.html')[0] + '.css';
+      document.getElementsByTagName('head')[0].appendChild(cssTag);
+    }
+  }());
+  </script>
+
+</head>
+<body contenteditable="true" spellcheck="false">
+
+<div class="sg-sample">
+  <div class="grid">
+    <div class="grid-col w-1of4 w-1of2-md">
+      <div class="sg-show-grid">w-1of4 w-1of2-md<br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sapiente cumque provident in laboriosam dicta fugit veritatis voluptate quibusdam cum.
+      </div>
+    </div>
+    <div class="grid-col w-1of4 w-1of2-md">
+      <div class="sg-show-grid">w-1of4 w-1of2-md</div>
+    </div>
+    <div class="grid-col w-1of4 w-1of2-md w-1of1-sm">
+      <div class="sg-show-grid">w-1of4 w-1of2-md w-1of1-sm</div>
+    </div>
+    <div class="grid-col w-1of4 w-1of2-md w-1of1-sm">
+      <div class="sg-show-grid">w-1of4 w-1of2-md w-1of1-sm<br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+    </div>
+    <div class="grid-col w-1of2 w-1of1-sm">
+      <div class="sg-show-grid">w-1of2 w-1of1-sm</div>
+    </div>
+    <div class="grid-col w-1of2 w-1of1-sm">
+      <div class="sg-show-grid">w-1of2 w-1of1-sm</div>
+    </div>
+  </div>
+</div>
+
+<script src="/scripts/app.js"></script>
+</body>
+</html>
