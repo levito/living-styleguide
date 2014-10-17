@@ -1,6 +1,6 @@
 module.exports = function (files, callback) {
   var path = require('path');
-  var srcpath = path.join(__dirname, 'app', 'views', 'pages');
+  var srcpath = path.join(__dirname, 'app', 'views', 'pages') + path.sep;
   var viewall = 'view_all';
 
   // converts '01-my_test-pattern_1' to 'My Test-pattern 1'

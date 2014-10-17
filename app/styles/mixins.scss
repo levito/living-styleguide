@@ -37,12 +37,12 @@
 @mixin sg-fontface($name, $family, $weight:normal, $style:normal) {
   @font-face {
     font-family: "#{$family}";
-    src: url("/fonts/#{$family}-#{$weight}.eot");
+    src: url("/living-styleguide/fonts/#{$family}-#{$weight}.eot");
     src: local("#{$name}"),
-    url("/fonts/#{$family}-#{$weight}.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/#{$family}-#{$weight}.woff") format("woff"),
-    url("/fonts/#{$family}-#{$weight}.ttf") format("truetype"),
-    url("/fonts/#{$family}-#{$weight}.svg##{$family}") format("svg");
+    url("/living-styleguide/fonts/#{$family}-#{$weight}.eot?#iefix") format("embedded-opentype"),
+    url("/living-styleguide/fonts/#{$family}-#{$weight}.woff") format("woff"),
+    url("/living-styleguide/fonts/#{$family}-#{$weight}.ttf") format("truetype"),
+    url("/living-styleguide/fonts/#{$family}-#{$weight}.svg##{$family}") format("svg");
     font-weight: $weight;
     font-style: $style;
   }
