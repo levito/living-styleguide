@@ -1,0 +1,429 @@
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.token.important {
+	font-weight: bold;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\000031}}
+body {
+  margin: 0;
+  background: #e5e5e5;
+  color: #333;
+  font: normal normal normal 14px/1.5 Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\000037}}
+code {
+  font-size: .857em;
+  line-height: 1.333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000311}}
+.body :not(pre) > code,
+.body pre {
+  background-color: #f2f2f2;
+  color: #000;
+  white-space: pre-wrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000317}}
+.body :not(pre) > code {
+  padding: .2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000320}}
+a {
+  color: #48c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000323}}
+hr {
+  border: none;
+  border-top: 3px solid #e5e5e5;
+  margin: 2em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000328}}
+.target {
+  position: relative;
+  top: -85px;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000333}}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000338}}
+.nav.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000346}}
+.nav.header li {
+  position: relative;
+  float: left;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000352}}
+.nav.header .level-2 {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000355}}
+.nav.header .level-3 {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000361}}
+.nav.header .level-3 li, .nav.header .level-3 a {
+  float: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000364}}
+.nav.header .level-3 li:only-child {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000368}}
+.nav.header li:hover > .level-3 {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000371}}
+.nav.header > li > a:hover,
+.nav.header .level-2 > li:hover,
+.nav.header .level-3 {
+  background: #222;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000377}}
+.nav.header .controls {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000379}}
+.nav.header .controls a {
+  text-transform: capitalize;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000382}}
+.nav.header .controls .level-3 {
+  left: auto;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000388}}
+.nav.header a,
+.nav.header .control {
+  float: left;
+  display: block;
+  padding: 7px 14px;
+  color: #777;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\0000397}}
+.nav.header a:hover, .nav.header a.active,
+.nav.header .control:hover,
+.nav.header .control.active {
+  color: #ddd;
+  -webkit-transition: all .1s;
+          transition: all .1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003102}}
+.nav.header a.active,
+.nav.header .control.active {
+  background: #333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003110}}
+.body {
+  padding-top: 32px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003113}}
+.body .section,
+.body .intro-section {
+  margin: 25px 15px;
+  padding: 0;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003122}}
+.body .intro-section {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 27px 16px;
+  max-width: 1024px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003135}}
+.body .section {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  border: 0 solid #333;
+  border-width: 25px 0 0;
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003144}}
+.full .body .section {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003147}}
+.phone .body .section, .tablet .body .section {
+  border-radius: 20px;
+  border-color: #333 #000 #000 #333;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003153}}
+.phone .body .section {
+  width: 480px;
+  height: 320px;
+  border-width: 20px 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003158}}
+.phone.portrait .body .section {
+  width: 320px;
+  height: 480px;
+  border-width: 30px 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003163}}
+.tablet .body .section {
+  width: 1024px;
+  height: 768px;
+  border-width: 20px 27px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003168}}
+.tablet.portrait .body .section {
+  width: 768px;
+  height: 1024px;
+  border-width: 27px 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003173}}
+.body .section .sample {
+  width: 100%;
+  margin: -20px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003176}}
+.phone .body .section .sample, .tablet .body .section .sample {
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003182}}
+.body .section .section-title {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 20px;
+  color: #ddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003190}}
+.full .body .section .section-title {
+  left: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003193}}
+.body .section .section-title a {
+  color: inherit;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003196}}
+.body .section .section-title a:hover {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003201}}
+.body .section .details {
+  display: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 14px;
+  width: 100%;
+  overflow: auto;
+  background: #fff;
+  line-height: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003210}}
+.full .body .section .details {
+  position: relative;
+  top: -20px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003215}}
+.phone .body .section .details, .tablet .body .section .details {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003226}}
+.body .details-toggle {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003229}}
+.body .details-label {
+  float: right;
+  position: relative;
+  top: -20px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: #777;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+          transition: color .3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003239}}
+.full .body .details-label {
+  padding-left: 0;
+  padding-right: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003245}}
+.body .Markup-toggle:checked ~ .Markup-label,
+.body .SCSS-toggle:checked ~ .SCSS-label,
+.body .CSS-toggle:checked ~ .CSS-label,
+.body .Usage-toggle:checked ~ .Usage-label,
+.body .Sample-toggle:checked ~ .Sample-label,
+.body .details-label:hover {
+  color: #ddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/folders\/n7\/2j8xwq3d0454l2js6xs5dw600000gn\/T\/gulp-ruby-sass\/styleguide\.scss}line{font-family:\00003253}}
+.body .Markup-toggle:checked ~ .Markup-details,
+.body .SCSS-toggle:checked ~ .SCSS-details,
+.body .CSS-toggle:checked ~ .CSS-details,
+.body .Usage-toggle:checked ~ .Usage-details {
+  display: block;
+}
