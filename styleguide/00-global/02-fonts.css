@@ -133,8 +133,8 @@
 
 @font-face {
   font-family: "sg-icons";
-  src: url("/fonts/sg-icons-normal.eot");
-  src: local("sg-icons"), url("/fonts/sg-icons-normal.eot?#iefix") format("embedded-opentype"), url("/fonts/sg-icons-normal.woff") format("woff"), url("/fonts/sg-icons-normal.ttf") format("truetype"), url("/fonts/sg-icons-normal.svg#sg-icons") format("svg");
+  src: url("/living-styleguide/fonts/sg-icons-normal.eot");
+  src: local("sg-icons"), url("/living-styleguide/fonts/sg-icons-normal.eot?#iefix") format("embedded-opentype"), url("/living-styleguide/fonts/sg-icons-normal.woff") format("woff"), url("/living-styleguide/fonts/sg-icons-normal.ttf") format("truetype"), url("/living-styleguide/fonts/sg-icons-normal.svg#sg-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
