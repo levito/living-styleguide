@@ -157,7 +157,7 @@
   }
 
   function jumpTo(el) {
-    window.location.hash = el.href.split('#');
+    window.location.hash = el.href.split('#')[1];
     return false;
   }
 
