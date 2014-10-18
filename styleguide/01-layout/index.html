@@ -9,45 +9,45 @@
 <body class="full">
   <ul class="header nav">
           <li>
-        <a href="styleguide/00-global/">
-          Global        </a>
+        <a href="styleguide/">
+          Styleguide        </a>
         <ul class="nav level-2">
                       <li>
-              <a                 href="styleguide/00-global/view_all/">
+              <a                 href="styleguide/00-global/">
+                Global              </a>
+              <ul class="nav level-3">
+                                  <li>
+                    <a                       href="styleguide/00-global/view_all/">
+                      View All                    </a>
+                  </li>
+                              </ul>
+            </li>
+                      <li>
+              <a class="active"                href="styleguide/01-layout/">
+                Layout              </a>
+              <ul class="nav level-3">
+                                  <li>
+                    <a                       href="styleguide/01-layout/view_all/">
+                      View All                    </a>
+                  </li>
+                              </ul>
+            </li>
+                      <li>
+              <a                 href="styleguide/99-coding_guide/">
+                Coding Guide              </a>
+              <ul class="nav level-3">
+                                  <li>
+                    <a                       href="styleguide/99-coding_guide/view_all/">
+                      View All                    </a>
+                  </li>
+                              </ul>
+            </li>
+                      <li>
+              <a                 href="styleguide/view_all/">
                 View All              </a>
               <ul class="nav level-3">
                               </ul>
             </li>
-                  </ul>
-      </li>
-          <li>
-        <a href="styleguide/01-layout/">
-          Layout        </a>
-        <ul class="nav level-2">
-                      <li>
-              <a                 href="styleguide/01-layout/view_all/">
-                View All              </a>
-              <ul class="nav level-3">
-                              </ul>
-            </li>
-                  </ul>
-      </li>
-          <li>
-        <a href="styleguide/99-coding_guide/">
-          Coding Guide        </a>
-        <ul class="nav level-2">
-                      <li>
-              <a                 href="styleguide/99-coding_guide/view_all/">
-                View All              </a>
-              <ul class="nav level-3">
-                              </ul>
-            </li>
-                  </ul>
-      </li>
-          <li>
-        <a href="styleguide/view_all/">
-          View All        </a>
-        <ul class="nav level-2">
                   </ul>
       </li>
         <li class="controls js_controls">
@@ -55,6 +55,22 @@
         <li>
           <a href="#" class="control">Jump To</a>
           <ul class="nav level-3">
+                          <li>
+                <a href="#section__basic_grid">
+                  Basic Grid                </a>
+              </li>
+                          <li>
+                <a href="#section__nested_grid">
+                  Nested Grid                </a>
+              </li>
+                          <li>
+                <a href="#section__responsive_grid">
+                  Responsive Grid                </a>
+              </li>
+                          <li>
+                <a href="#section__semantic_grid">
+                  Semantic Grid                </a>
+              </li>
                       </ul>
         </li>
       </ul>
@@ -126,6 +142,422 @@
   </ul>
 
   <div class="body">
+    
+      <div class="section">
+        <a class="target" id="section__basic_grid"></a>
+        <h1 class="section-title">
+                                  <a href="styleguide/01-layout/basic_grid.html?customCss" target="_blank">
+              Basic Grid            </a>
+                  </h1>
+
+                                            <input type="radio" name="styleguide/01-layout/basic_grid"
+                id="SCSS__styleguide/01-layout/basic_grid"
+                class="SCSS-toggle details-toggle"
+                />
+              <label for="SCSS__styleguide/01-layout/basic_grid"
+                class="SCSS-label details-label">
+                SCSS              </label>
+                                                                      <input type="radio" name="styleguide/01-layout/basic_grid"
+                id="Markup__styleguide/01-layout/basic_grid"
+                class="Markup-toggle details-toggle"
+                />
+              <label for="Markup__styleguide/01-layout/basic_grid"
+                class="Markup-label details-label">
+                Markup              </label>
+                                                <input type="radio" name="styleguide/01-layout/basic_grid"
+                id="Usage__styleguide/01-layout/basic_grid"
+                class="Usage-toggle details-toggle"
+                />
+              <label for="Usage__styleguide/01-layout/basic_grid"
+                class="Usage-label details-label">
+                Usage              </label>
+                                                <input type="radio" name="styleguide/01-layout/basic_grid"
+                id="Sample__styleguide/01-layout/basic_grid"
+                class="Sample-toggle details-toggle"
+                checked/>
+              <label for="Sample__styleguide/01-layout/basic_grid"
+                class="Sample-label details-label">
+                Sample              </label>
+                              
+                  <pre class="details SCSS-details"><code class="language-scss">@import &#34;01-layout/show_grid&#34;;
+</code></pre>
+        
+        
+                  <pre class="details Markup-details"><code class="language-markup">&#60;div class=&#34;sg-sample&#34;&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of1&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/1&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of2&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/2&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of2&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/2&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/3&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/3&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/3&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of4&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/4&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/4&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/4&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/4&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of5&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/5&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of5&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/5&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of5&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/5&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of5&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/5&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of5&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/5&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of6&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/6&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of6&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/6&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of6&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/6&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of6&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/6&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of6&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/6&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of6&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        1/6&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;Without width classes&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;grid columns&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;will have auto widths&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;and wrap&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;and expand as needed. See: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, obcaecati, corporis, quasi, distinctio sunt perspiciatis natus aspernatur earum dicta impedit sint accusantium alias voluptatum velit adipisci aut nemo
+        nulla labore.&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+&#60;/div&#62;
+</code></pre>
+        
+                  <div class="details Usage-details">
+            <p>Grids always consist of a <em>wrapper</em> (<code>.grid</code>) which <em>contains only grid columns</em> (<code>.grid-col</code>).</p>
+<p>You can add width classes (<code>w-XofY</code> means width: X/Y of the wrapper) to the grid columns to set its widths. Without them, the width will depend on the content.</p>
+          </div>
+        
+                  <iframe class="sample" frameborder="0"
+            src="styleguide/01-layout/basic_grid.html?customCss"></iframe>
+              </div>
+
+    
+      <div class="section">
+        <a class="target" id="section__nested_grid"></a>
+        <h1 class="section-title">
+                                  <a href="styleguide/01-layout/nested_grid.html?customCss" target="_blank">
+              Nested Grid            </a>
+                  </h1>
+
+                                            <input type="radio" name="styleguide/01-layout/nested_grid"
+                id="SCSS__styleguide/01-layout/nested_grid"
+                class="SCSS-toggle details-toggle"
+                />
+              <label for="SCSS__styleguide/01-layout/nested_grid"
+                class="SCSS-label details-label">
+                SCSS              </label>
+                                                                      <input type="radio" name="styleguide/01-layout/nested_grid"
+                id="Markup__styleguide/01-layout/nested_grid"
+                class="Markup-toggle details-toggle"
+                />
+              <label for="Markup__styleguide/01-layout/nested_grid"
+                class="Markup-label details-label">
+                Markup              </label>
+                                                <input type="radio" name="styleguide/01-layout/nested_grid"
+                id="Usage__styleguide/01-layout/nested_grid"
+                class="Usage-toggle details-toggle"
+                />
+              <label for="Usage__styleguide/01-layout/nested_grid"
+                class="Usage-label details-label">
+                Usage              </label>
+                                                <input type="radio" name="styleguide/01-layout/nested_grid"
+                id="Sample__styleguide/01-layout/nested_grid"
+                class="Sample-toggle details-toggle"
+                checked/>
+              <label for="Sample__styleguide/01-layout/nested_grid"
+                class="Sample-label details-label">
+                Sample              </label>
+                              
+                  <pre class="details SCSS-details"><code class="language-scss">@import &#34;01-layout/show_grid&#34;;
+</code></pre>
+        
+        
+                  <pre class="details Markup-details"><code class="language-markup">&#60;div class=&#34;sg-sample&#34;&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-3of4&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        &#60;b&#62;3/4 item&#60;/b&#62; with content and nested grid
+        &#60;div class=&#34;grid&#34;&#62;
+          &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+            &#60;div class=&#34;sg-show-grid&#34;&#62;1/3&#60;/div&#62;
+          &#60;/div&#62;
+          &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+            &#60;div class=&#34;sg-show-grid&#34;&#62;1/3&#60;/div&#62;
+          &#60;/div&#62;
+          &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+            &#60;div class=&#34;sg-show-grid&#34;&#62;1/3&#60;/div&#62;
+          &#60;/div&#62;
+          &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+            &#60;div class=&#34;sg-show-grid&#34;&#62;1/3&#60;/div&#62;
+          &#60;/div&#62;
+          &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+            &#60;div class=&#34;sg-show-grid&#34;&#62;1/3&#60;/div&#62;
+          &#60;/div&#62;
+          &#60;div class=&#34;grid-col w-1of3&#34;&#62;
+            &#60;div class=&#34;sg-show-grid&#34;&#62;1/3&#60;/div&#62;
+          &#60;/div&#62;
+        &#60;/div&#62;
+      &#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;1/4&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+&#60;/div&#62;
+</code></pre>
+        
+                  <div class="details Usage-details">
+            <p>You can nest grids inside of each other by inserting new <code>.grid</code> wrappers with <code>.grid-col</code>s.</p>
+          </div>
+        
+                  <iframe class="sample" frameborder="0"
+            src="styleguide/01-layout/nested_grid.html?customCss"></iframe>
+              </div>
+
+    
+      <div class="section">
+        <a class="target" id="section__responsive_grid"></a>
+        <h1 class="section-title">
+                                  <a href="styleguide/01-layout/responsive_grid.html?customCss" target="_blank">
+              Responsive Grid            </a>
+                  </h1>
+
+                                            <input type="radio" name="styleguide/01-layout/responsive_grid"
+                id="SCSS__styleguide/01-layout/responsive_grid"
+                class="SCSS-toggle details-toggle"
+                />
+              <label for="SCSS__styleguide/01-layout/responsive_grid"
+                class="SCSS-label details-label">
+                SCSS              </label>
+                                                                      <input type="radio" name="styleguide/01-layout/responsive_grid"
+                id="Markup__styleguide/01-layout/responsive_grid"
+                class="Markup-toggle details-toggle"
+                />
+              <label for="Markup__styleguide/01-layout/responsive_grid"
+                class="Markup-label details-label">
+                Markup              </label>
+                                                <input type="radio" name="styleguide/01-layout/responsive_grid"
+                id="Usage__styleguide/01-layout/responsive_grid"
+                class="Usage-toggle details-toggle"
+                />
+              <label for="Usage__styleguide/01-layout/responsive_grid"
+                class="Usage-label details-label">
+                Usage              </label>
+                                                <input type="radio" name="styleguide/01-layout/responsive_grid"
+                id="Sample__styleguide/01-layout/responsive_grid"
+                class="Sample-toggle details-toggle"
+                checked/>
+              <label for="Sample__styleguide/01-layout/responsive_grid"
+                class="Sample-label details-label">
+                Sample              </label>
+                              
+                  <pre class="details SCSS-details"><code class="language-scss">@import &#34;01-layout/show_grid&#34;;
+</code></pre>
+        
+        
+                  <pre class="details Markup-details"><code class="language-markup">&#60;div class=&#34;sg-sample&#34;&#62;
+  &#60;div class=&#34;grid&#34;&#62;
+    &#60;div class=&#34;grid-col w-1of4 w-1of2-md&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;w-1of4 w-1of2-md
+        &#60;br/&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sapiente cumque provident in laboriosam dicta fugit veritatis voluptate quibusdam cum.
+      &#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4 w-1of2-md&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;w-1of4 w-1of2-md&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4 w-1of2-md w-1of1-sm&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;w-1of4 w-1of2-md w-1of1-sm&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of4 w-1of2-md w-1of1-sm&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;w-1of4 w-1of2-md w-1of1-sm
+        &#60;br/&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      &#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of2 w-1of1-sm&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;w-1of2 w-1of1-sm&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;grid-col w-1of2 w-1of1-sm&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;w-1of2 w-1of1-sm&#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+&#60;/div&#62;
+</code></pre>
+        
+                  <div class="details Usage-details">
+            <p>Multi line grid columns only need one wrapper, not one for each line, and can contain different amount of content. this is important responsive design, as you can see in the example.</p>
+<p>Append size suffixes to the width classes to target widths:</p>
+<ul>
+<li><code>-xs</code>: max. 479px</li>
+<li><code>-sm</code>: max. 719px</li>
+<li><code>-md</code>: max. 979px</li>
+<li><code>-lg</code>: min. 1280px</li>
+</ul>
+<p>Per default, columns are top-aligned, but they can also be aligned to middle, bottom or baseline.</p>
+          </div>
+        
+                  <iframe class="sample" frameborder="0"
+            src="styleguide/01-layout/responsive_grid.html?customCss"></iframe>
+              </div>
+
+    
+      <div class="section">
+        <a class="target" id="section__semantic_grid"></a>
+        <h1 class="section-title">
+                                  <a href="styleguide/01-layout/semantic_grid.html?customCss" target="_blank">
+              Semantic Grid            </a>
+                  </h1>
+
+                                            <input type="radio" name="styleguide/01-layout/semantic_grid"
+                id="SCSS__styleguide/01-layout/semantic_grid"
+                class="SCSS-toggle details-toggle"
+                />
+              <label for="SCSS__styleguide/01-layout/semantic_grid"
+                class="SCSS-label details-label">
+                SCSS              </label>
+                                                                      <input type="radio" name="styleguide/01-layout/semantic_grid"
+                id="Markup__styleguide/01-layout/semantic_grid"
+                class="Markup-toggle details-toggle"
+                />
+              <label for="Markup__styleguide/01-layout/semantic_grid"
+                class="Markup-label details-label">
+                Markup              </label>
+                                                                      <input type="radio" name="styleguide/01-layout/semantic_grid"
+                id="Sample__styleguide/01-layout/semantic_grid"
+                class="Sample-toggle details-toggle"
+                checked/>
+              <label for="Sample__styleguide/01-layout/semantic_grid"
+                class="Sample-label details-label">
+                Sample              </label>
+                              
+                  <pre class="details SCSS-details"><code class="language-scss">@import &#34;app&#34;;
+
+.my-wrapper {
+  @extend %grid;
+}
+.my-main,
+.my-sidebar {
+  @extend %grid-col;
+}
+.my-main {
+  width: 70%;
+}
+.my-sidebar {
+  width: 30%;
+}
+
+
+@import &#34;01-layout/show_grid&#34;;
+
+.sg-show-grid {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</code></pre>
+        
+        
+                  <pre class="details Markup-details"><code class="language-markup">&#60;div class=&#34;sg-sample&#34;&#62;
+  &#60;div class=&#34;my-wrapper&#34;&#62;
+    &#60;div class=&#34;my-main&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        &#60;h1 class=&#34;h4&#34;&#62;My Main&#60;/h1&#62;
+        &#60;p&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, praesentium, nisi, beatae dolorum cum eaque quidem doloremque harum at debitis repellat laboriosam quaerat aliquid incidunt accusamus. Facere, accusamus similique impedit.&#60;/p&#62;
+      &#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class=&#34;my-sidebar&#34;&#62;
+      &#60;div class=&#34;sg-show-grid&#34;&#62;
+        &#60;h2 class=&#34;h4&#34;&#62;My Sidebar&#60;/h1&#62;
+        &#60;p&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&#60;/p&#62;
+      &#60;/div&#62;
+    &#60;/div&#62;
+  &#60;/div&#62;
+&#60;/div&#62;
+</code></pre>
+        
+        
+                  <iframe class="sample" frameborder="0"
+            src="styleguide/01-layout/semantic_grid.html?customCss"></iframe>
+              </div>
+
       </div>
 
   <script src="scripts/styleguide.js"></script>
