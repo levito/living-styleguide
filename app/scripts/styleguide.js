@@ -156,6 +156,11 @@
     cookie.set('sg_details', el.getAttribute('id'));
   }
 
+  function jumpTo(el) {
+    window.location.hash = el.href.split('#');
+    return false;
+  }
+
   var controls = document.querySelectorAll('.js_controls')[0];
 
   controls.addEventListener('click', function(e) {
@@ -164,6 +169,8 @@
       switchLayoutView(el);
     } else if (el.className.match('js_details')) {
       switchDetailsView(el);
+    } else if (el.className.match('js_jumpto')) {
+      jumpTo(el);
     }
   });
 

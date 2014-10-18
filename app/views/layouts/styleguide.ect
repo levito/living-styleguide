@@ -45,7 +45,8 @@
           <ul class="nav level-3">
             <% for section in @sections: %>
               <li>
-                <a href="#section__<%- section.name.split('/').pop() %>">
+                <a href="#section__<%- section.name.split('/').pop() %>"
+                  class="js_jumpto">
                   <%- section.title %>
                 </a>
               </li>
