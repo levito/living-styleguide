@@ -158,7 +158,6 @@
 
   function jumpTo(el) {
     window.location.hash = el.href.split('#')[1];
-    return false;
   }
 
   var controls = document.querySelectorAll('.js_controls')[0];
@@ -170,6 +169,7 @@
     } else if (el.className.match('js_details')) {
       switchDetailsView(el);
     } else if (el.className.match('js_jumpto')) {
+      e.preventDefault();
       jumpTo(el);
     }
   });

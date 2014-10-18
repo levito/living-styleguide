@@ -796,7 +796,6 @@ Prism.languages.insertBefore('scss', 'ignore', {
 
   function jumpTo(el) {
     window.location.hash = el.href.split('#')[1];
-    return false;
   }
 
   var controls = document.querySelectorAll('.js_controls')[0];
@@ -808,6 +807,7 @@ Prism.languages.insertBefore('scss', 'ignore', {
     } else if (el.className.match('js_details')) {
       switchDetailsView(el);
     } else if (el.className.match('js_jumpto')) {
+      e.preventDefault();
       jumpTo(el);
     }
   });
