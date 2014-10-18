@@ -9,41 +9,41 @@
 <body class="full">
   <ul class="header nav">
           <li>
-        <a href="styleguide/">
+        <a href="/styleguide/">
           Styleguide        </a>
         <ul class="nav level-2">
                       <li>
-              <a                 href="styleguide/00-global/">
+              <a                 href="/styleguide/00-global/">
                 Global              </a>
               <ul class="nav level-3">
                                   <li>
-                    <a                       href="styleguide/00-global/view_all/">
+                    <a                       href="/styleguide/00-global/view_all/">
                       View All                    </a>
                   </li>
                               </ul>
             </li>
                       <li>
-              <a                 href="styleguide/01-layout/">
+              <a                 href="/styleguide/01-layout/">
                 Layout              </a>
               <ul class="nav level-3">
                                   <li>
-                    <a                       href="styleguide/01-layout/view_all/">
+                    <a                       href="/styleguide/01-layout/view_all/">
                       View All                    </a>
                   </li>
                               </ul>
             </li>
                       <li>
-              <a                 href="styleguide/99-coding_guide/">
+              <a                 href="/styleguide/99-coding_guide/">
                 Coding Guide              </a>
               <ul class="nav level-3">
                                   <li>
-                    <a                       href="styleguide/99-coding_guide/view_all/">
+                    <a                       href="/styleguide/99-coding_guide/view_all/">
                       View All                    </a>
                   </li>
                               </ul>
             </li>
                       <li>
-              <a                 href="styleguide/view_all/">
+              <a                 href="/styleguide/view_all/">
                 View All              </a>
               <ul class="nav level-3">
                               </ul>
@@ -55,10 +55,6 @@
         <li>
           <a href="#" class="control">Jump To</a>
           <ul class="nav level-3">
-                          <li>
-                <a href="#section__living_styleguide">
-                  Living Styleguide                </a>
-              </li>
                       </ul>
         </li>
       </ul>
@@ -130,62 +126,6 @@
   </ul>
 
   <div class="body">
-    
-      <div class="intro-section">
-        <a class="target" id="section__living_styleguide"></a>
-        <h1 class="section-title">
-                      Living Styleguide                  </h1>
-
-                  <input type="radio" class="Usage-toggle details-toggle" checked/>
-        
-        
-        
-        
-                  <div class="details Usage-details">
-            <p>This gulp.js project handles typical prototyping and front-end asset pipelining needs and additionally serves as a static styleguide generator.</p>
-<h2 id="project-structure">Project Structure</h2>
-<p>All your code lives inside the <code>app</code> directory. Most paths can be configured inside <code>gulpfile.js</code>. The default is:</p>
-<ul>
-<li><code>fonts</code>: your custom fonts and auto-generated icon fonts</li>
-<li><code>images</code>: all your images</li>
-<li><code>scripts</code>: your own scripts<ul>
-<li><code>lib</code>: external scripts (no jshint messages here)</li>
-</ul>
-</li>
-<li><code>styles</code>: your stylesheets (scss or css)</li>
-<li><code>views</code>: html templates<ul>
-<li><code>layouts</code>: shared layouts</li>
-<li><code>partials</code>: shared partials</li>
-<li><code>pages</code>: single prototype pages<ul>
-<li><code>styleguide</code>: styleguide patterns</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="working-with-styleguide-patterns">Working with Styleguide Patterns</h2>
-<h3 id="naming-scheme">Naming Scheme</h3>
-<ul>
-<li>keep all names lower-case</li>
-<li>prepend 2-digit numbers followed by a dash to reorder patterns (e.g. <code>01-foo</code>, optional)</li>
-<li>prepend an underscore to hide a file (useful for shared partials)</li>
-<li>other underscores will be converted to spaces in the pattern name</li>
-</ul>
-<h3 id="anatomy-of-a-pattern">Anatomy of a Pattern</h3>
-<p>A pattern can consist of:</p>
-<ul>
-<li>a markup template (<code>*.ect</code>, Embedded CoffeeScript Template, optional)</li>
-<li>a markdown file for documentation (<code>*.md</code>, optional)</li>
-<li>a stylesheet file (<code>*.css</code> or <code>*.scss</code>, optional)</li>
-</ul>
-<p>All files of a pattern have the same basename. At least a markup or markdown file must exist. If you have a markup template, the stylesheet will be applied to it. A markdown file only will render a documentation sample like this.</p>
-<p>You can nest patterns 2 levels deep by creating directories. These levels are reflected in the left side of the navigation bar above. Additionally, <em>View All</em> links will be generated for combined views.</p>
-<p>Use the <em>Jump To</em> link on the right side of the navigation bar to scroll to single patterns. The <em>Layout</em> switch allows you to test responsive layout for common screen sizes. <em>Details</em> allows you to quickly show/hide usage notes and code samples for all patterns.</p>
-<p>You can also switch the details on the single patterns. Clicking the pattern name on the top right of a pattern will open it stand-alone in a new tab.</p>
-          </div>
-        
-              </div>
-
       </div>
 
   <script src="scripts/styleguide.js"></script>

@@ -51,18 +51,18 @@ module.exports = function (files, callback) {
       });
       return navitem;
     }).filter(function (navitem) {
-      // keep only '/styleguide', all others are children
-      return navitem.path.split(path.sep).length === 2;
+      // keep only 'styleguide', all others are children
+      return navitem.path.split(path.sep).length === 1;
     });
 
     // files in one dir will show up as patterns
     var dirfiles = files.filter(function (file) {
       if (path.basename(currpath) === viewall) {
         return !file.isDirectory() &&
-          file.path.indexOf(path.resolve(path.sep + currpath, '..')) !== -1 &&
+          file.path.indexOf(path.resolve(currpath, '..')) !== -1 &&
           path.basename(file.path).charAt(0) !== '_';
       } else {
-        var filename = file.path.replace(path.sep + currpath + path.sep, '');
+        var filename = file.path.replace(currpath + path.sep, '');
         return !file.isDirectory() &&
           filename.indexOf(path.sep) === -1 &&
           filename.charAt(0) !== '_'; // hide files starting with '_'
