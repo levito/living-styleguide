@@ -2,6 +2,7 @@
 'use strict';
 
 var config = {
+  basepath: '/living-styleguide/', // for gh-pages - you'll probably want '/'
   styles: 'styles',
   styles_app: 'app.scss',
   styles_styleguide: 'styleguide.scss',
@@ -70,13 +71,16 @@ gulp.task('views', function () {
         templatePath: 'app/views/layouts/body.ect',
         engine: 'ect',
         locals: {
+          basepath: config.basepath,
           styleguide: true
         }
       }),
       $.layoutize({
         templatePath: 'app/views/layouts/body.ect',
         engine: 'ect',
-        locals: {}
+        locals: {
+          basepath: config.basepath
+        }
       })
     ))
     .pipe(gulp.dest('.tmp'))
@@ -88,6 +92,7 @@ gulp.task('styleguide', function () {
   var render = function (files, navitems, sections, dest) {
     return gulp.src('app/views/layouts/styleguide.ect')
       .pipe($.consolidate('ect', {
+        basepath: config.basepath,
         files: files,
         navitems: navitems,
         sections: sections

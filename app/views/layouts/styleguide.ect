@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Styleguide</title>
-  <base href="/living-styleguide/" />
+  <base href="<%- @basepath %>" />
   <!-- build:css styles/styleguide.css -->
   <link rel="stylesheet" href="/prismjs/themes/prism.css"/>
   <link rel="stylesheet" href="/styles/styleguide.css"/>
@@ -41,7 +41,7 @@
     <li class="controls js_controls">
       <ul class="nav level-2">
         <li>
-          <a href="#" class="control">Jump To</a>
+          <a href="#" class="control js_jumpto">Jump To</a>
           <ul class="nav level-3">
             <% for section in @sections: %>
               <li>
