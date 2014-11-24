@@ -32,9 +32,14 @@ You need:
 * node.js, at least version 0.10
 * gulp (`npm install -g gulp`)
 * ruby and sass, at least version 3.2
+* git
 
-After cloning the project, do:
-`npm install`
+1. Create a new project directory, open a terminal and cd to the new folder
+2. run 'git clone git@github.com:levito/living-styleguide.git .'
+3. run 'npm install'
+4. Open your editor of choice. In gulpfile.js set basepath to '/' unless you're using github-pages
+5. run 'gulp serve'
+6. You can now access the styleguide in your browser. Default URL is localhost:3000/styleguide/
 
 
 Gulp Tasks
